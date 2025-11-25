@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Full Stack Developer",
+    "company": "Tech Company",
+    "domain": "web",
+    "startDate": "2022-01-01",
+    "endDate": null,
+    "description": "Leading development of scalable web applications",
+    "highlights": ["Built microservices architecture", "Mentored junior developers"]
+  },
+  {
+    "id": 2,
+    "title": "Mobile App Developer",
+    "company": "StartUp Inc",
+    "domain": "app",
+    "startDate": "2020-06-01",
+    "endDate": "2021-12-31",
+    "description": "Developed cross-platform mobile applications",
+    "highlights": ["Shipped 3 production apps", "Improved performance by 40%"]
+  },
+  {
+    "id": 3,
+    "title": "Software Engineer",
+    "company": "Enterprise Corp",
+    "domain": "software",
+    "startDate": "2019-01-01",
+    "endDate": "2020-05-31",
+    "description": "Designed distributed systems",
+    "highlights": ["Architected microservices", "Reduced latency by 60%"]
+  },
+  {
+    "id": 4,
+    "title": "Security Researcher",
+    "company": "Security Firm",
+    "domain": "security",
+    "startDate": "2018-01-01",
+    "endDate": "2018-12-31",
+    "description": "Conducted security audits and penetration testing",
+    "highlights": ["Found 50+ vulnerabilities", "Improved security posture"]
+  }
+]

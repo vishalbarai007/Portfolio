@@ -1,0 +1,22 @@
+{
+  "web": {
+    "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "backend": ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"],
+    "tools": ["Git", "Docker", "Vercel", "AWS"]
+  },
+  "app": {
+    "mobile": ["React Native", "Flutter", "Swift", "Kotlin"],
+    "backend": ["Firebase", "Node.js", "Python"],
+    "tools": ["Xcode", "Android Studio", "Figma"]
+  },
+  "software": {
+    "languages": ["Go", "Rust", "C++", "Java"],
+    "systems": ["Kubernetes", "Docker", "gRPC", "Microservices"],
+    "tools": ["Git", "CI/CD", "Linux"]
+  },
+  "security": {
+    "specialties": ["Penetration Testing", "Vulnerability Assessment", "Secure Coding"],
+    "tools": ["Burp Suite", "Metasploit", "OWASP"],
+    "certifications": ["CEH", "OSCP"]
+  }
+}
