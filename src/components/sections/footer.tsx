@@ -100,7 +100,7 @@ export default function ContactFooter() {
 
               <div>
                 <input
-                  type="number"
+                  type="tel"
                   name="Contact no."
                   value={formData.number}
                   onChange={handleChange}
@@ -149,7 +149,7 @@ export default function ContactFooter() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4 text-foreground">Developer</h3>
+              <h3 className="text-lg font-semibold mb-4 text-foreground">VISHAL Signature</h3>
               <p className="text-sm text-muted-foreground">Full Stack • App • Software • Security</p>
             </div>
 
@@ -214,14 +214,14 @@ export default function ContactFooter() {
                 >
                   <Linkedin size={20} />
                 </a>
-                <a
+                {/* <a
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Twitter size={20} />
-                </a>
+                </a> */}
                 <a 
                   href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxwTKPtDWlkVpwFtxBNnvCDrrmWnsZWGZcBSgVknqpPPJsHjLLrGQQHgRStMGRfwMgPZTj" 
                   className="text-muted-foreground hover:text-primary transition-colors"

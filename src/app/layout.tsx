@@ -5,6 +5,7 @@ import "@/styles/globals.css"
 import Footer from "@/components/sections/footer"
 import { ThemeProvider } from "@/components/sections/theme-provider"
 import Navbar from "@/components/sections/navbar"
+import PillNavbar from "@/components/sections/pillnavbar"
 
 const geistSans = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -29,7 +30,8 @@ export default function RootLayout({
           enableSystem={false}
           storageKey="theme"
         >
-          <Navbar />
+          {/* <Navbar /> */}
+          <PillNavbar/>
           <main>{children}</main>
           <Footer />
         </ThemeProvider>
