@@ -14,9 +14,9 @@ export default function PillNavbar() {
         { label: "Contact", href: "/contact" }
       ]}
       activeHref="/"
-      className="custom-nav"
+      className="custom-nav "
       ease="power2.easeOut"
-      baseColor="#000000"
+      baseColor="#0070f3"
       pillColor="#ffffff"
       hoveredPillTextColor="#ffffff"
       pillTextColor="#000000"

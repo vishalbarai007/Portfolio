@@ -248,7 +248,7 @@ const PillNav: React.FC<PillNavProps> = ({
   } as React.CSSProperties;
 
   return (
-    <div className="absolute top-[1em] z-[1000] w-full left-0 md:w-auto md:left-auto">
+    <div className="top-[1em] z-1000 w-full absolute flex flex-col items-center justify-center">
       <nav
         className={`w-full md:w-max flex items-center justify-between md:justify-start box-border px-4 md:px-0 ${className}`}
         aria-label="Primary"
@@ -317,7 +317,7 @@ const PillNav: React.FC<PillNavProps> = ({
               const PillContent = (
                 <>
                   <span
-                    className="hover-circle absolute left-1/2 bottom-0 rounded-full z-[1] block pointer-events-none"
+                    className="hover-circle absolute left-1/2 bottom-0 rounded-full z-1 block pointer-events-none"
                     style={{
                       background: 'var(--base, #000)',
                       willChange: 'transform'
@@ -327,9 +327,9 @@ const PillNav: React.FC<PillNavProps> = ({
                       circleRefs.current[i] = el;
                     }}
                   />
-                  <span className="label-stack relative inline-block leading-[1] z-[2]">
+                  <span className="label-stack relative inline-block leading-none z-2">
                     <span
-                      className="pill-label relative z-[2] inline-block leading-[1]"
+                      className="pill-label relative z-2 inline-block leading-none"
                       style={{ willChange: 'transform' }}
                     >
                       {item.label}

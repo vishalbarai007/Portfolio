@@ -79,13 +79,6 @@ export default function HeroSection() {
   return (
 
     <div>
-      <div className="h-screen w-full">
-        <div className="p-4 border">
-          Background test:
-          <div className="w-10 h-10 bg-background"></div>
-        </div>
-
-      </div>
       <section
         ref={heroRef}
         className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-gradient-to-b from-background via-background to-card/30"

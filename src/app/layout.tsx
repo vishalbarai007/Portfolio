@@ -30,8 +30,7 @@ export default function RootLayout({
           enableSystem={false}
           storageKey="theme"
         >
-          {/* <Navbar /> */}
-          <PillNavbar/>
+          <Navbar />
           <main>{children}</main>
           <Footer />
         </ThemeProvider>

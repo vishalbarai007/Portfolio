@@ -1,13 +1,27 @@
+"use client"
 import HeroSection from "@/components/sections/hero-section"
 import DomainShowcase from "@/components/sections/domain-showcase"
 import FeaturedProjects from "@/components/sections/featured-projects"
+import Hero from "@/components/sections/hero"
+import ClickSpark from "@/components/layout/ClickSpark"
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <DomainShowcase />
-      <FeaturedProjects />
+      <ClickSpark
+        sparkColor='#fff'
+        sparkSize={20}
+        sparkRadius={30}
+        sparkCount={8}
+        duration={500}
+      >
+        <Hero />
+        <HeroSection />
+        <DomainShowcase />
+        <FeaturedProjects />
+
+      </ClickSpark>
+
     </>
   )
 }

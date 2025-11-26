@@ -5,6 +5,7 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import SearchBar from "./search-bar"
 import { ThemeToggle } from "./theme-toggle"
+import PillNavbar from "./pillnavbar"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,25 +21,27 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
+    <nav className="sticky h-20 top-0 z-50 border-b-1 bg-background/30 backdrop-blur-md rounded-tl-[0%] rounded-tr-[0%] rounded-bl-[100%] rounded-br-[100%]
+ shadow-accent/50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <Link href="/" className="text-2xl font-bold text-primary">
             Dev
           </Link>
 
           {/* Desktop Navigation */}
+          {/* <PillNavbar/> */}
           <div className="hidden md:flex gap-8 items-center">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-foreground hover:text-muted-foreground transition-colors text-CTA"
               >
                 {item.label}
               </Link>
             ))}
-            <SearchBar />
+            {/* <SearchBar /> */}
             <ThemeToggle />
           </div>
 
