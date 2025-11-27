@@ -3,10 +3,14 @@
 import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-import GlassCard from "../ui/glass-card"
+// import Link from "next/link"
+import Image from "next/image"
+// import { Button } from "@/components/ui/button"
+// import { ArrowRight } from "lucide-react"
+// import GlassCard from "../ui/glass-card"
+import LandingHero from "../../../public/Images/mypersonal/LandingHero.png"
+import { Button } from "../ui/button"
+import SplashCursor from "../SplashCursor"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -77,27 +81,96 @@ export default function Hero() {
         { name: "Cybersecurity", color: "domain-security" },
     ]
 
+
     return (
 
         <div className="h-screen w-full flex justify-center ">
+           <SplashCursor />
             <div className="h-[80vh] w-[90%] bg-primary rounded-4xl my-10 p-10 grid grid-cols-[65%_35%] gap-5">
-                <div>
-                    <GlassCard>
+
+                <div className="flex justify-center items-center">
+                    {/* <GlassCard>
                         <div className="h-full w-full flex justify-center items-center">
                             <h1>
                                 Hello workdssfsfwertyuio
-                            </h1>
+                            </h1>    
+
                         </div>
 
-                    </GlassCard>
+                    </GlassCard> */}
+                    {/* <div
+                        ref={containerRef}
+                        style={{ position: 'relative' }}
+                    >
+
+
+                        <div style={{ height: '600px', position: 'relative' }}>
+                            <FluidGlass
+                                mode="lens" // or "bar", "cube"
+                                lensProps={{
+                                    scale: 0.25,
+                                    ior: 1.15,
+                                    thickness: 5,
+                                    chromaticAberration: 0.1,
+                                    anisotropy: 0.01
+                                }}
+                            />
+                        </div>
+
+                        <h1 className="font-extrabold text-[100px] text-background"> Hii Myself Vishal Barai</h1>
+
+                    </div> */}
+
+
+
+                    <div className="h-auto flex items-center justify-center p-8">
+                        <div className="max-w-4xl">
+                            {/* Welcome Text */}
+                            <div className="flex items-center gap-3 mb-8">
+                                <span className="text-2xl text-popover">✦</span>
+                                <h2 className=" uppercase tracking-wider text-2xl font-medium text-popover">
+                                    Welcome to Portfolio
+                                </h2>
+                                <span className="text-2xl text-popover">✦</span>
+                            </div>
+
+                            {/* Main Heading */}
+                            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 text-popover">
+                                I m Vishal Barai<br />
+                                Software <span className="text-foreground underline decoration-4 underline-offset-8">Engineer</span><br />
+                                {/* <span className="font-bold">Based In USA</span> */}
+                            </h1>
+
+                            {/* Description */}
+                            <p className="text-gray-600 text-lg max-w-xl">
+                                Passionate about crafting efficient and scalable software solutions. Let's build something amazing together!
+                            </p>
+                            <Button>
+                                Contact Me
+                            </Button>
+                            <Button>
+                                Hire me
+                            </Button>
+                        </div>
+                    </div>
 
                 </div>
-                <div>
-
+                <div className="flex justify-center items-center">
+                    <div className="h-[500px] w-[500px] bg-background rounded-full overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] hover:shadow-[0_25px_80px_rgba(0,0,0,0.2)] transition-shadow duration-300">
+                        <div className="h-full w-full flex justify-center items-center">
+                            <Image
+                                src={LandingHero}
+                                alt="Landing Hero"
+                                width={600}
+                                height={600}
+                                className="rounded-full -mt-40 object-contain drop-shadow-primary drop-shadow-2xl"
+                            />
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
         </div>
+
     )
 }

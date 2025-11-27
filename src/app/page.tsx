@@ -4,6 +4,7 @@ import DomainShowcase from "@/components/sections/domain-showcase"
 import FeaturedProjects from "@/components/sections/featured-projects"
 import Hero from "@/components/sections/hero"
 import ClickSpark from "@/components/layout/ClickSpark"
+import Ribbons from "@/components/Ribbons"
 
 export default function Home() {
   return (
@@ -15,11 +16,12 @@ export default function Home() {
         sparkCount={8}
         duration={500}
       >
+
         <Hero />
         <HeroSection />
         <DomainShowcase />
         <FeaturedProjects />
-
+        
       </ClickSpark>
 
     </>
