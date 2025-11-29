@@ -6,6 +6,7 @@ import Hero from "@/components/sections/hero"
 import ClickSpark from "@/components/layout/ClickSpark"
 import Ribbons from "@/components/Ribbons"
 import Techstack from "@/components/sections/webtechstack"
+import OtherTechstack from "@/components/sections/othertechstack"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <HeroSection />
         <DomainShowcase />
         <Techstack />
+        <OtherTechstack/>
         {/* <Techstack /> */}
         <FeaturedProjects />
         

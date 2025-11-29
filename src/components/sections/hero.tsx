@@ -136,7 +136,7 @@ export default function Hero() {
 
                             {/* Main Heading */}
                             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 text-popover">
-                                I m Vishal Barai<br />
+                                I'm Vishal Barai<br />
                                 Software <span className="text-foreground underline decoration-4 underline-offset-8">Engineer</span><br />
                                 {/* <span className="font-bold">Based In USA</span> */}
                             </h1>
