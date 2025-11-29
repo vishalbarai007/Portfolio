@@ -1,53 +1,41 @@
-import React from 'react'
-import LogoLoop from '../LogoLoop';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
-import { FaJava } from "react-icons/fa";
-
-import { SiPython } from "react-icons/si";
+import React from "react";
+import LogoLoop from "../LogoLoop";
+import {
+  SiPython, SiElectron, SiGithub, SiLinux,
+  SiPostman, SiGoland
+} from "react-icons/si";
+import { FaJava, FaGit } from "react-icons/fa";
 import { CgCPlusPlus } from "react-icons/cg";
-import { SiElectron } from "react-icons/si";
-import { SiGithub } from "react-icons/si";
-import { FaGit } from "react-icons/fa";
-import { SiLinux } from "react-icons/si";
-import { SiPostman } from "react-icons/si";
 
-import { SiGoland } from "react-icons/si";
 const techLogos = [
-    { node: <SiReact />, title: "React", href: "https://react.dev" },
-    { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-    { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-    { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { node: <FaJava />, title: "Java", href: "https://www.java.com" },
+  { node: <SiPython />, title: "Python", href: "https://www.python.org" },
+  { node: <CgCPlusPlus />, title: "C++", href: "https://isocpp.org" },
+  { node: <SiElectron />, title: "Electron", href: "https://www.electronjs.org" },
+  { node: <SiGithub />, title: "GitHub", href: "https://github.com" },
+  { node: <FaGit />, title: "Git", href: "https://git-scm.com" },
+  { node: <SiLinux />, title: "Linux", href: "https://www.linux.org" },
+  { node: <SiPostman />, title: "Postman", href: "https://www.postman.com" },
+  { node: <SiGoland />, title: "Go", href: "https://golang.org" },
 ];
 
-// Alternative with image sources
-const imageLogos = [
-    { src: "/logos/company1.png", alt: "Company 1", href: "https://company1.com" },
-    { src: "/logos/company2.png", alt: "Company 2", href: "https://company2.com" },
-    { src: "/logos/company3.png", alt: "Company 3", href: "https://company3.com" },
-];
-
-const OtherTechstack = () => {
-    return (
-        <div className='h-auto w-full flex justify-center items-center '>
-            <div style={{ height: 'auto', position: 'relative', overflow: 'hidden' }} className='w-full flex flex-col justify-center items-center gap-10'>
-                {/* Basic horizontal loop */}
-
-                <LogoLoop
-                    logos={techLogos}
-                    speed={120}
-                    direction="right"
-                    logoHeight={100}
-                    gap={40}
-                    hoverSpeed={30}
-                    scaleOnHover
-                    fadeOut
-                    fadeOutColor="primary"
-                    ariaLabel="Technology partners"
-                />
-
-            </div>
-        </div>
-    )
+export default function OtherTechstack() {
+  return (
+    <div className="w-full h-auto flex justify-center items-center">
+      <div className="w-full flex flex-col justify-center items-center gap-10 relative overflow-hidden">
+        <LogoLoop
+          logos={techLogos}
+          speed={120}
+          direction="right"
+          logoHeight={100}
+          gap={40}
+          hoverSpeed={30}
+          scaleOnHover
+          fadeOut
+          fadeOutColor="primary"
+          ariaLabel="Technology partners"
+        />
+      </div>
+    </div>
+  );
 }
-
-export default OtherTechstack;

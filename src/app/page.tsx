@@ -7,6 +7,7 @@ import ClickSpark from "@/components/layout/ClickSpark"
 import Ribbons from "@/components/Ribbons"
 import Techstack from "@/components/sections/webtechstack"
 import OtherTechstack from "@/components/sections/othertechstack"
+import LandingProject from "@/components/sections/landing-project"
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <DomainShowcase />
         <Techstack />
         <OtherTechstack/>
+        <LandingProject />
         {/* <Techstack /> */}
         <FeaturedProjects />
         
