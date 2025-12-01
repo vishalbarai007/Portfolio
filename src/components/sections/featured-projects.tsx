@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
+import DemoOne from "./works"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -112,8 +113,10 @@ export default function FeaturedProjects() {
   return (
     <section ref={sectionRef} className="py-24 px-4 relative overflow-hidden">
       {/* Subtle background gradient */}
+      <DemoOne />
+
       <div className="absolute inset-0 bg-linear-to-b from-background via-muted/20 to-background pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
           <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 rounded-full border border-border bg-muted/30 backdrop-blur-sm">
@@ -129,16 +132,16 @@ export default function FeaturedProjects() {
 
         <div ref={projectsRef} className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {featuredProjects.map((project, idx) => (
-            <Card 
-              key={idx} 
+            <Card
+              key={idx}
               className="project-card-item group relative overflow-hidden border-border/60 hover:border-primary/40 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 bg-card/80 backdrop-blur-sm"
             >
               {/* Subtle gradient overlay on hover */}
               <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              
+
               <CardHeader className="relative space-y-4 pb-4">
                 <div className="flex items-start justify-between">
-                  <Badge 
+                  <Badge
                     className={`${domainColors[project.domain]} font-medium px-3 py-1 text-xs uppercase tracking-wider`}
                   >
                     {project.domain}
@@ -173,20 +176,20 @@ export default function FeaturedProjects() {
                   </CardDescription>
                 </div>
               </CardHeader>
-              
+
               <CardContent className="relative space-y-6 pt-4">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
-                    <Badge 
-                      key={tag} 
-                      variant="secondary" 
+                    <Badge
+                      key={tag}
+                      variant="secondary"
                       className="text-xs font-medium px-3 py-1 bg-secondary/60 hover:bg-secondary transition-colors"
                     >
                       {tag}
                     </Badge>
                   ))}
                 </div>
-                
+
                 <div className="flex gap-4 pt-2 border-t border-border/50">
                   <a
                     href={project.github}

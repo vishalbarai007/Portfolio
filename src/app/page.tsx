@@ -8,6 +8,7 @@ import Ribbons from "@/components/Ribbons"
 import Techstack from "@/components/sections/webtechstack"
 import OtherTechstack from "@/components/sections/othertechstack"
 import LandingProject from "@/components/sections/landing-project"
+import DemoOne from "@/components/sections/works"
 
 export default function Home() {
   return (
