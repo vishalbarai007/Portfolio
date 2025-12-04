@@ -85,7 +85,7 @@ export default function Hero() {
     return (
 
         <div className="h-screen w-full flex justify-center ">
-           <SplashCursor />
+           {/* <SplashCursor /> */}
             <div className="h-[80vh] w-[90%] bg-primary rounded-4xl my-10 p-10 grid grid-cols-[65%_35%] gap-5">
 
                 <div className="flex justify-center items-center">

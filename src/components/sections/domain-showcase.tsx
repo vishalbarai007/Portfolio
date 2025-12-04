@@ -21,9 +21,9 @@ const domains = [
     href: "/portfolio/web",
   },
   {
-    id: "app",
-    title: "App Development",
-    description: "Creating native and cross-platform mobile applications with seamless user experiences.",
+    id: "WordPress",
+    title: "WordPress Development",
+    description: "Creating custom WordPress themes and plugins to deliver dynamic and user-friendly websites.",
     icon: Smartphone,
     color: "text-green-400",
     bgGradient: "gradient-app",

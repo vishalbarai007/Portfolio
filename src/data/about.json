@@ -1,13 +1,12 @@
 {
-  "name": "Your Name",
+  "name": "Vishal Barai",
   "title": "Full Stack Developer & Security Enthusiast",
   "bio": "I'm a versatile developer with expertise across multiple technical domains. I specialize in building scalable web applications, mobile apps, robust software systems, and securing digital infrastructure.",
   "summary": "With 6+ years of experience, I've worked on diverse projects ranging from e-commerce platforms to distributed systems. I'm passionate about clean code, continuous learning, and solving complex technical challenges.",
-  "location": "San Francisco, CA",
-  "email": "hello@example.com",
+  "location": "Mumbai,Maharashtra, India",
+  "email": "vishalbaraiofficial02@gmail.com",
   "social": {
-    "github": "https://github.com",
-    "linkedin": "https://linkedin.com",
-    "twitter": "https://twitter.com"
+    "github": "https://github.com/vishalbarai007",
+    "linkedin": "https://linkedin.com/in/vishalbarai"
   }
 }
