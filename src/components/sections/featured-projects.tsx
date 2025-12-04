@@ -113,7 +113,6 @@ export default function FeaturedProjects() {
   return (
     <section ref={sectionRef} className="py-24 px-4 relative overflow-hidden">
       {/* Subtle background gradient */}
-      <DemoOne />
 
       <div className="absolute inset-0 bg-linear-to-b from-background via-muted/20 to-background pointer-events-none" />
 

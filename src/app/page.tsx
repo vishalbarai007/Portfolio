@@ -9,6 +9,11 @@ import Techstack from "@/components/sections/webtechstack"
 import OtherTechstack from "@/components/sections/othertechstack"
 import LandingProject from "@/components/sections/landing-project"
 import DemoOne from "@/components/sections/works"
+import { motion } from "framer-motion"
+import GitHubCalendar from "react-github-calendar"
+import GitHubContributions from "@/components/GitHubContributions"
+import { Github } from "lucide-react"
+import GitHubChart from "@/components/GitHubChart"
 
 export default function Home() {
   return (
@@ -25,11 +30,12 @@ export default function Home() {
         <HeroSection />
         <DomainShowcase />
         <Techstack />
-        <OtherTechstack/>
+        <OtherTechstack />
         <LandingProject />
         {/* <Techstack /> */}
         <FeaturedProjects />
-        
+        <GitHubContributions isDark={true} />
+
       </ClickSpark>
 
     </>
