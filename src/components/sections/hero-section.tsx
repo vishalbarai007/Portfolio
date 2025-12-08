@@ -70,7 +70,6 @@ export default function HeroSection() {
 
   const domains = [
     { name: "Full Stack Web", color: "domain-web" },
-    { name: "App Development", color: "domain-app" },
     { name: "Wordpress Developer", color: "domain-web" },
     { name: "Software Engineering", color: "domain-software" },
     { name: "Cybersecurity", color: "domain-security" },
@@ -79,9 +78,10 @@ export default function HeroSection() {
   return (
 
     <div>
+     
       <section
         ref={heroRef}
-        className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-gradient-to-b from-background via-background to-card/30"
+        className=" flex flex-col items-center justify-center px-4 py-20 bg-linear-to-b from-background via-background to-card/30"
       >
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold text-balance leading-tight">
@@ -97,11 +97,6 @@ export default function HeroSection() {
             <Link href="/portfolio">
               <Button size="lg" className="gap-2">
                 View Portfolio <ArrowRight size={20} />
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button size="lg" variant="outline">
-                Get in Touch
               </Button>
             </Link>
           </div>

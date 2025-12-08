@@ -1,14 +1,14 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+// import gsap from "gsap"
+// import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Code2, Smartphone, Cpu, Shield, ArrowRight } from "lucide-react"
 
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(ScrollTrigger)
 
 const domains = [
   {
@@ -55,60 +55,60 @@ export default function DomainShowcase() {
   const descRef = useRef<HTMLParagraphElement>(null)
   const cardsRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    if (!sectionRef.current) return
+  // useEffect(() => {
+  //   if (!sectionRef.current) return
 
-    const ctx = gsap.context(() => {
-      gsap.from(titleRef.current, {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          end: "top 50%",
-          scrub: 0.5,
-          markers: false,
-        },
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power2.out",
-      })
+  //   const ctx = gsap.context(() => {
+  //     gsap.from(titleRef.current, {
+  //       scrollTrigger: {
+  //         trigger: sectionRef.current,
+  //         start: "top 80%",
+  //         end: "top 50%",
+  //         scrub: 0.5,
+  //         markers: false,
+  //       },
+  //       y: 50,
+  //       opacity: 0,
+  //       duration: 0.8,
+  //       ease: "power2.out",
+  //     })
 
-      gsap.from(descRef.current, {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 75%",
-          end: "top 45%",
-          scrub: 0.5,
-          markers: false,
-        },
-        y: 30,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power2.out",
-      })
+  //     gsap.from(descRef.current, {
+  //       scrollTrigger: {
+  //         trigger: sectionRef.current,
+  //         start: "top 75%",
+  //         end: "top 45%",
+  //         scrub: 0.5,
+  //         markers: false,
+  //       },
+  //       y: 30,
+  //       opacity: 0,
+  //       duration: 0.8,
+  //       ease: "power2.out",
+  //     })
 
-      gsap.from(".domain-card-item", {
-        scrollTrigger: {
-          trigger: cardsRef.current,
-          start: "top 75%",
-          end: "top 25%",
-          scrub: 0.5,
-          markers: false,
-        },
-        y: 80,
-        opacity: 0,
-        scale: 0.9,
-        duration: 0.8,
-        stagger: 0.12,
-        ease: "back.out(1.7)",
-      })
-    }, sectionRef)
+  //     gsap.from(".domain-card-item", {
+  //       scrollTrigger: {
+  //         trigger: cardsRef.current,
+  //         start: "top 75%",
+  //         end: "top 25%",
+  //         scrub: 0.5,
+  //         markers: false,
+  //       },
+  //       y: 80,
+  //       opacity: 0,
+  //       scale: 0.9,
+  //       duration: 0.8,
+  //       stagger: 0.12,
+  //       ease: "back.out(1.7)",
+  //     })
+  //   }, sectionRef)
 
-    return () => ctx.revert()
-  }, [])
+  //   return () => ctx.revert()
+  // }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 bg-background">
+    <section ref={sectionRef} className="h-screen py-20 px-4 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 ref={titleRef} className="text-4xl md:text-5xl font-bold mb-4">

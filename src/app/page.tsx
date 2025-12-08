@@ -9,6 +9,8 @@ import OtherTechstack from "@/components/sections/othertechstack"
 import LandingProject from "@/components/sections/landing-project"
 import GitHubContributions from "@/components/GitHubContributions"
 import { AnimatedTestimonialsDemo } from "@/components/AnimatedTestimonialsDemo"
+import CurvedLoop from "@/components/CurvedLoop"
+import { HeroParallaxDemo } from "@/components/HeroParallaxDemo"
 
 export default function Home() {
   return (
@@ -23,6 +25,7 @@ export default function Home() {
 
         <Hero />
         <HeroSection />
+        <HeroParallaxDemo />
         <DomainShowcase />
         <Techstack />
         <OtherTechstack />
@@ -30,7 +33,7 @@ export default function Home() {
         {/* <Techstack /> */}
         <FeaturedProjects />
         <GitHubContributions isDark={true} />
-        <AnimatedTestimonialsDemo/>
+        <AnimatedTestimonialsDemo />
 
       </ClickSpark>
 
