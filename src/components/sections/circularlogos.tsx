@@ -16,7 +16,7 @@ const CircularLogos = () => {
                     <File />
                     <Settings />
                     <File />
-                    <Search />
+                    {/* <Search /> */}
                 </OrbitingCircles>
             </div>
         </div>
