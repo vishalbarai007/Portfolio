@@ -8,72 +8,72 @@ export function HeroParallaxDemo() {
 }
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "Adventurer",
+    link: "https://github.com/vishalbarai007/Adventurer",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
+    title: "Weather Forecast",
+    link: "https://weather-forecast-six-theta.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      "/Images/Projects/thumbnails/weather.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "ScriptCrafter",
+    link: "https://aiscripter-lake.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+      "/Images/Projects/thumbnails/ScriptCrafter.png",
   },
 
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
+    title: "Cupid",
+    link: "https://cupid2-0-programmer-s-date.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+      "/Images/Projects/thumbnails/cupid.png",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    title: "DietPlanner",
+    link: "https://die-ate-planner.vercel.app",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+      "/Images/Projects/thumbnails/DietPlanner.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "PhotoBooth",
+    link: "https://photo-booth-opal.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+      "/Images/Projects/thumbnails/PhotoBooth.png",
+  },
+
+  {
+    title: "Fire Predict",
+    link: "https://forest-fire-predictor-nine.vercel.app/",
+    thumbnail:
+      "/Images/Projects/thumbnails/Firepredict.png",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    title: "Momentum Science Academy",
+    link: "https://momentum-science-academy.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+      "/Images/Projects/thumbnails/momentum.png",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    title: "Zodiac 2025",
+    link: "https://zodiac.rgitstudentcouncil.in/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+      "/Images/Projects/thumbnails/Zodiac2025.png",
+  },
+  {
+    title: "Cess RGIT",
+    link: "https://rgitcess.in/",
+    thumbnail:
+      "/Images/Projects/thumbnails/cess.png",
+  },
+  {
+    title: "Phoenix Infra",
+    link: "https://phoenixinfra.in/",
+    thumbnail:
+      "/Images/Projects/thumbnails/Phoenix.png",
   },
 
   {

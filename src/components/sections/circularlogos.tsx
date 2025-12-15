@@ -16,11 +16,11 @@ const CircularLogos = () => {
                     <File />
                     <Settings />
                     <File />
-                    {/* <Search /> */}
+                    <Search />
                 </OrbitingCircles>
             </div>
         </div>
     )
 }
 
-export default CircularLogos
+export default CircularLogos;

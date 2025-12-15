@@ -65,10 +65,18 @@ export default function GitHubContributions({ isDark = true }: { isDark?: boolea
         );
     }
 
+    if (data.length === 0) {
+        return (
+            <div className={`p-8 rounded-2xl shadow-2xl transition-all duration-300 ${isDark ? 'bg-[#0d1117] border border-gray-800' : 'bg-white border border-gray-200'}`}>
+                <p className="text-center text-gray-500">Unable to load GitHub contributions.</p>
+            </div>
+        );
+    }
+    
     return (
         <div className={`p-8 rounded-2xl shadow-2xl transition-all duration-300 ${isDark
-                ? 'bg-gradient-to-br from-[#0d1117] to-[#161b22] border border-gray-800'
-                : 'bg-gradient-to-br from-white to-gray-50 border border-gray-200'
+            ? 'bg-linear-to-br from-[#0d1117] to-[#161b22] border border-gray-800'
+            : 'bg-linear-to-br from-white to-gray-50 border border-gray-200'
             }`}>
             {/* Header */}
             <div className="mb-6">

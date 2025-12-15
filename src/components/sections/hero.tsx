@@ -71,7 +71,7 @@ export default function Hero() {
                 </div>
                 <div className="flex justify-center items-center">
                     <div className="absolute right-20">
-                        <CircularLogos />
+                        {/* <CircularLogos /> */}
                     </div>
                     <div className="h-[500px] w-[500px] bg-primary rounded-full overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] hover:shadow-[0_25px_80px_rgba(0,0,0,0.2)] transition-shadow duration-300">
                         <div className="h-full w-full flex justify-center items-center">

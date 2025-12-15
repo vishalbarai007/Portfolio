@@ -33,7 +33,7 @@ export default function Home() {
         {/* <Techstack /> */}
         <FeaturedProjects />
         <GitHubContributions isDark={true} />
-        <AnimatedTestimonialsDemo />
+        {/* <AnimatedTestimonialsDemo /> */}
 
       </ClickSpark>
 
