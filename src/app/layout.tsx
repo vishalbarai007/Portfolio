@@ -2,18 +2,15 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "@/styles/globals.css"
-import Footer from "@/components/sections/footer"
 import { ThemeProvider } from "@/components/sections/theme-provider"
-import Navbar from "@/components/sections/navbar"
-import PillNavbar from "@/components/sections/pillnavbar"
+import MacDock from "@/components/layout/mac-dock"
 
 const geistSans = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Developer Portfolio",
-  description: "Professional portfolio showcasing expertise across multiple domains",
-  generator: "v0.app",
+  description: "Professional single page portfolio showcasing developer expertise and projects",
 }
 
 export default function RootLayout({
@@ -23,16 +20,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.className} bg-background text-foreground`}>
+      <body className={`${geistSans.className} bg-background text-foreground antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
+          defaultTheme="system"
+          enableSystem={true}
           storageKey="theme"
         >
-          <Navbar />
           <main>{children}</main>
-          <Footer />
+          
+          {/* Floating macOS-style Dock Navigation */}
+          <MacDock />
         </ThemeProvider>
       </body>
     </html>

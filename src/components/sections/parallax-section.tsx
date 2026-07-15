@@ -21,7 +21,7 @@ export default function ParallaxSection({ children, speed = 0.5, className = "" 
     if (!ref.current) return
 
     gsap.to(ref.current, {
-      y: () => gsap.getProperty(ref.current, "offsetHeight") * speed,
+      y: () => (ref.current?.offsetHeight ?? 0) * speed,
       scrollTrigger: {
         trigger: ref.current,
         start: "top center",

@@ -3,13 +3,14 @@ import { NextResponse } from "next/server"
 interface ContactRequest {
   name: string
   email: string
+  phone?: string // Added optional phone field
   message: string
 }
 
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    const { name, email, message } = body as ContactRequest
+    const { name, email, phone, message } = body as ContactRequest
 
     // Validate input
     if (!name || typeof name !== "string" || name.trim().length === 0) {
@@ -24,20 +25,32 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Message must be at least 10 characters" }, { status: 400 })
     }
 
-    // Log the submission (in production, send email using Resend, SendGrid, etc.)
+    // Log the submission
     console.log("Contact form submission:", {
       name: name.trim(),
       email: email.trim(),
+      phone: phone?.trim() || "Not provided",
       message: message.trim(),
       timestamp: new Date().toISOString(),
     })
 
-    // TODO: Integrate with email service (Resend, SendGrid, etc.)
-    // const emailResponse = await sendEmail({
-    //   to: process.env.CONTACT_EMAIL,
-    //   subject: `New contact from ${name}`,
-    //   html: `<p>${message}</p><p>From: ${email}</p>`
-    // })
+    // ------------------------------------------------------------------
+    // OPTIONAL: Example integration with Resend (Uncomment to use)
+    // ------------------------------------------------------------------
+    // import { Resend } from 'resend';
+    // const resend = new Resend(process.env.RESEND_API_KEY);
+    // await resend.emails.send({
+    //   from: 'Portfolio <onboarding@resend.dev>',
+    //   to: 'vishalbaraiofficial01@gmail.com',
+    //   subject: `New Contact from ${name}`,
+    //   html: `
+    //     <p><strong>Name:</strong> ${name}</p>
+    //     <p><strong>Email:</strong> ${email}</p>
+    //     <p><strong>Phone:</strong> ${phone || 'N/A'}</p>
+    //     <p><strong>Message:</strong></p>
+    //     <p>${message}</p>
+    //   `
+    // });
 
     return NextResponse.json({
       success: true,

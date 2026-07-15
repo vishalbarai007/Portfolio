@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import ScrollReveal from "@/components/scroll-reveal"
+import ScrollReveal from "@/components/sections/scroll-reveal"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Loader2 } from "lucide-react"

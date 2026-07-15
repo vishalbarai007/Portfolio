@@ -37,7 +37,6 @@ export default function WebTechstack() {
           hoverSpeed={30}
           scaleOnHover
           fadeOut
-          fadeOutColor="primary"
           ariaLabel="Technology partners"
         />
       </div>

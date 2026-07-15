@@ -1,11 +1,11 @@
 "use client"
 
-import ScrollReveal from "@/components/sections/scroll-reveal"
+// import ScrollReveal from "@/components/sections/scroll-reveal"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import about from "@/data/about.json"
 import skills from "@/data/skills.json"
-import { Briefcase, Code, Code2, Github, GraduationCap, Linkedin, Mail, MapPin, Server, Shield, Smartphone, Sparkles } from "lucide-react"
+import { Briefcase, Code, Code2,  Github,  Linkedin,  Mail, MapPin, Server, Shield, Smartphone, Sparkles } from "lucide-react"
 
 export default function AboutPage() {
 

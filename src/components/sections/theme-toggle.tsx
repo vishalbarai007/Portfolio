@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
 
   useEffect(() => {
     setMounted(true)
@@ -18,8 +18,7 @@ export function ThemeToggle() {
   }
 
   const handleThemeChange = () => {
-    const newTheme = theme === "light" ? "dark" : "light"
-    console.log("[v0] Changing theme from", theme, "to", newTheme)
+    const newTheme = resolvedTheme === "light" ? "dark" : "light"
     setTheme(newTheme)
   }
 
@@ -30,9 +29,9 @@ export function ThemeToggle() {
       onClick={handleThemeChange}
       className="rounded-full hover:bg-accent/20 transition-colors"
       aria-label="Toggle theme"
-      title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+      title={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
     >
-      {theme === "dark" ? (
+      {resolvedTheme === "dark" ? (
         <Sun className="h-5 w-5 text-yellow-500 transition-transform" />
       ) : (
         <Moon className="h-5 w-5 text-slate-700 transition-transform" />

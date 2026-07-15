@@ -114,7 +114,7 @@ export default function DomainShowcase() {
           <h2 ref={titleRef} className="text-4xl md:text-5xl font-bold mb-4">
             Areas of Expertise
           </h2>
-          <p ref={descRef} className="text-lg text-muted max-w-2xl mx-auto">
+          <p ref={descRef} className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Explore my professional experience across four distinct technical domains
           </p>
         </div>
@@ -124,13 +124,13 @@ export default function DomainShowcase() {
             const Icon = domain.icon
             return (
               <Link key={domain.id} href={domain.href}>
-                <Card className="domain-card-item h-full hover:border-primary/50 transition-all cursor-pointer group">
+                <Card className="domain-card-item h-full hover:border-primary/50 transition-all cursor-pointer group bg-card/50 backdrop-blur-sm">
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
                       <Icon className={`${domain.color} w-8 h-8`} />
                     </div>
                     <CardTitle className="text-2xl">{domain.title}</CardTitle>
-                    <CardDescription className="text-base">{domain.description}</CardDescription>
+                    <CardDescription className="text-base text-muted-foreground">{domain.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Button variant="ghost" className="gap-2 group-hover:translate-x-1 transition-transform">
