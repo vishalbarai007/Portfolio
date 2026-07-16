@@ -1,30 +1,33 @@
 "use client"
-
-import React from "react"
+import DomainShowcase from "@/components/sections/home/domain-showcase"
+import FeaturedProjects from "@/components/sections/home/featured-projects"
+import Hero from "@/components/sections/home/hero"
 import ClickSpark from "@/components/layout/ClickSpark"
-import NewHero from "@/components/sections/newhero"
-import Stack from "@/components/sections/stack"
-import Experience from "@/components/sections/experience"
-import Contact from "@/components/sections/contact"
+import Techstack from "@/components/sections/home/webtechstack"
+import OtherTechstack from "@/components/sections/home/othertechstack"
+import LandingProject from "@/components/sections/home/landing-project"
+import GitHubContributions from "@/components/sections/home/github-contributions"
+import { HeroParallaxDemo } from "@/components/sections/home/hero-parallax-demo"
 
 export default function Home() {
   return (
-    <ClickSpark
-      sparkColor="#fff"
-      sparkSize={20}
-      sparkRadius={30}
-      sparkCount={8}
-      duration={500}
-    >
-      <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
-        {/* Main Content Sections */}
-        <main className="space-y-16">
-          <NewHero />
-          <Stack />
-          <Experience />
-          <Contact />
-        </main>
-      </div>
-    </ClickSpark>
+    <>
+      <ClickSpark
+        sparkColor='var(--primary)'
+        sparkSize={20}
+        sparkRadius={30}
+        sparkCount={8}
+        duration={500}
+      >
+        <Hero />
+        <HeroParallaxDemo />
+        <DomainShowcase />
+        <Techstack />
+        <OtherTechstack />
+        <LandingProject />
+        <FeaturedProjects />
+        <GitHubContributions isDark={true} />
+      </ClickSpark>
+    </>
   )
 }

@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useEffect, useRef, useState } from "react"
-import ScrollReveal from "@/components/sections/scroll-reveal"
+import ScrollReveal from "@/components/layout/scroll-reveal"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Send, Loader2, MessageCircle } from "lucide-react"

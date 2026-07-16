@@ -1,6 +1,6 @@
 "use client"
 
-import ScrollReveal from "@/components/sections/scroll-reveal"
+import ScrollReveal from "@/components/layout/scroll-reveal"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 

@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import ScrollReveal from "@/components/sections/scroll-reveal"
-import SkillMatrixEnhanced from "@/components/sections/skill-matrix-enhanced"
+import ScrollReveal from "@/components/layout/scroll-reveal"
+import SkillMatrixEnhanced from "@/components/sections/skills/skill-matrix-enhanced"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   BarChart,

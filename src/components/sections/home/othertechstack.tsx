@@ -1,5 +1,5 @@
 import React from "react";
-import LogoLoop from "../LogoLoop";
+import LogoLoop from "./logo-loop";
 import {
   SiPython, SiElectron, SiGithub, SiLinux,
   SiPostman, SiGoland

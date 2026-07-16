@@ -1,7 +1,7 @@
 "use client"
 
-import ScrollReveal from "@/components/sections/scroll-reveal"
-import SkillMatrix from "@/components/sections/skill-matrix"
+import ScrollReveal from "@/components/layout/scroll-reveal"
+import SkillMatrix from "@/components/sections/skills/skill-matrix"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts"
 

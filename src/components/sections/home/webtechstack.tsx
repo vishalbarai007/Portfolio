@@ -1,5 +1,5 @@
 import React from "react";
-import LogoLoop from "../LogoLoop";
+import LogoLoop from "./logo-loop";
 import {
   SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiJavascript,
   SiHtml5, SiCss3, SiNodedotjs, SiExpress, SiMongodb, SiMysql,

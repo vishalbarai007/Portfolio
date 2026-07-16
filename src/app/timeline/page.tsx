@@ -1,11 +1,10 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import ScrollReveal from "@/components/sections/scroll-reveal"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import experiences from "@/data/experiences.json"
-import { TimelineDemo } from "@/components/TimelineDemo"
+import { TimelineDemo } from "@/components/sections/timeline/timeline-demo"
 
 const domainColors: Record<string, string> = {
   web: "bg-blue-500/10 text-blue-400 border-blue-500/20",

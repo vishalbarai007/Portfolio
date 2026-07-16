@@ -1,6 +1,5 @@
 import React from 'react'
-import InfiniteMenu from '../InfiniteMenu';
-import { redirect } from 'next/dist/server/api-utils';
+import InfiniteMenu from './infinite-menu';
 
 const LandingProject = () => {
 

@@ -2,10 +2,10 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Button } from "../ui/button"
+import { Button } from "../../ui/button"
 import { ArrowRight, Sparkles, Code2, Shield, Cpu, Smartphone } from "lucide-react"
 import Link from "next/link"
-import LandingHero from "../../../public/Images/mypersonal/LandingHero.png"
+import LandingHero from "../../../../public/Images/mypersonal/LandingHero.png"
 
 const containerVariants = {
   hidden: { opacity: 0 },

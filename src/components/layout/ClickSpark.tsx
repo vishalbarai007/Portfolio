@@ -89,6 +89,21 @@ const ClickSpark: React.FC<ClickSparkProps> = ({
 
     let animationId: number;
 
+    const getSparkColor = () => {
+      if (sparkColor && !sparkColor.startsWith('var(')) {
+        return sparkColor;
+      }
+      const computed = getComputedStyle(canvas);
+      const colorVal = computed.getPropertyValue('--primary').trim();
+      if (!colorVal) return '#888';
+      // Convert space-separated HSL values (e.g. "240 5.9% 10%") to CSS-friendly hsl() format
+      if (colorVal.split(' ').length >= 3) {
+        const parts = colorVal.split(' ');
+        return `hsl(${parts[0]} ${parts[1]} ${parts[2]})`;
+      }
+      return colorVal;
+    };
+
     const draw = (timestamp: number) => {
       if (!startTimeRef.current) {
         startTimeRef.current = timestamp;
@@ -112,7 +127,7 @@ const ClickSpark: React.FC<ClickSparkProps> = ({
         const x2 = spark.x + (distance + lineLength) * Math.cos(spark.angle);
         const y2 = spark.y + (distance + lineLength) * Math.sin(spark.angle);
 
-        ctx.strokeStyle = sparkColor;
+        ctx.strokeStyle = getSparkColor();
         ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.moveTo(x1, y1);
