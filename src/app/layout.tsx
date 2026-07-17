@@ -25,8 +25,8 @@ export default function RootLayout({
       <body className={`${geistSans.className} bg-background text-foreground`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem={true}
+          defaultTheme="dark"
+          enableSystem={false}
           storageKey="theme"
         >
           <Navbar />

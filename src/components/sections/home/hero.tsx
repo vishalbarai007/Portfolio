@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Button } from "../../ui/button"
+import { Badge } from "../../ui/badge"
 import { ArrowRight, Sparkles, Code2, Shield, Cpu, Smartphone } from "lucide-react"
 import Link from "next/link"
 import LandingHero from "../../../../public/Images/mypersonal/LandingHero.png"
@@ -68,9 +69,14 @@ export default function Hero() {
             animate="visible"
             className="flex flex-col space-y-8"
           >
-            <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary uppercase tracking-wider">Available for New Projects</span>
+            <motion.div variants={itemVariants}>
+              <Badge
+                variant="outline"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-transparent border-border text-muted-foreground hover:bg-muted/30 transition-colors text-xs tracking-widest uppercase font-semibold"
+              >
+                <Sparkles className="w-3 h-3" />
+                Available for New Projects
+              </Badge>
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-4">
@@ -92,14 +98,14 @@ export default function Hero() {
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-4">
               <Link href="/portfolio">
-                <Button size="lg" className="h-14 px-8 text-lg rounded-full group">
+                <Button size="lg" className="h-14 px-8 text-lg rounded-full group bg-primary text-primary-foreground hover:bg-primary/90">
                   View Work
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="h-14 px-8 text-lg rounded-full">
-                  Let's Talk
+                <Button size="lg" variant="outline" className="h-14 px-8 text-lg rounded-full border-border hover:bg-muted/50">
+                  Let&apos;s Talk
                 </Button>
               </Link>
             </motion.div>

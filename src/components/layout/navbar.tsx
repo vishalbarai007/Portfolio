@@ -68,7 +68,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed w-full top-0 z-50 h-20 flex items-center bg-background/30 backdrop-blur-md border-b border-border/40">
+    <nav className="fixed w-full top-0 z-50 h-20 flex items-center bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center relative z-50">
         <Link 
           href="/" 

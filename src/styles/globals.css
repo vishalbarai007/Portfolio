@@ -48,17 +48,17 @@
 }
  
 .dark {
-  /* DARK MODE - Shadcn Zinc-950 Theme */
+  /* DARK MODE - Shadcn Zinc-950 Theme with visible white borders */
   --background: 240 10% 3.9%;       /* Zinc-950 / #09090b */
   --foreground: 0 0% 98%;           /* Zinc-50 */
  
-  --card: 240 10% 3.9%;             /* Match background */
+  --card: 240 10% 5.5%;             /* Slightly lighter than bg */
   --card-foreground: 0 0% 98%;
  
-  --popover: 240 10% 3.9%;
+  --popover: 240 10% 5.5%;
   --popover-foreground: 0 0% 98%;
  
-  --primary: 0 0% 98%;              /* Zinc-50 */
+  --primary: 0 0% 98%;              /* Zinc-50 — white primary */
   --primary-foreground: 240 5.9% 10%;/* Zinc-900 */
  
   --secondary: 240 3.7% 15.9%;      /* Zinc-800 */
@@ -73,9 +73,9 @@
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
  
-  --border: 240 3.7% 15.9%;
+  --border: 240 3.7% 22%;           /* Zinc-700 — more visible white-ish border */
   --input: 240 3.7% 15.9%;
-  --ring: 240 4.9% 83.9%;
+  --ring: 0 0% 98%;                 /* White ring focus */
 
   --chart-1: 220 70% 50%;
   --chart-2: 160 60% 45%;
