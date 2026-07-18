@@ -52,7 +52,7 @@ export default function DomainShowcase() {
   const cardsRef = useRef<HTMLDivElement>(null)
 
   return (
-    <section ref={sectionRef} className="min-h-screen py-20 px-4 bg-background flex items-center">
+    <section ref={sectionRef} className="min-h-screen py-0 px-4 bg-background flex items-center">
       <div className="max-w-7xl mx-auto w-full">
         <div className="text-center mb-16">
           <h2 ref={titleRef} className="text-4xl md:text-5xl font-bold mb-4 text-foreground">

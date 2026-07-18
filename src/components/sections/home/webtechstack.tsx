@@ -26,7 +26,7 @@ const techLogos = [
 
 export default function WebTechstack() {
   return (
-    <div className="w-full h-auto flex justify-center items-center">
+    <div id="stack" className="w-full h-auto flex justify-center items-center">
       <div className="w-full flex flex-col justify-center items-center gap-10 relative overflow-hidden">
         <LogoLoop
           logos={techLogos}

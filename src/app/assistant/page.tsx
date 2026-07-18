@@ -96,7 +96,7 @@ export default function AssistantPage() {
       <div className="max-w-4xl mx-auto">
         <ScrollReveal className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">AI Assistant</h1>
-          <p className="text-lg text-muted max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ask me anything about my experience, skills, and projects
           </p>
         </ScrollReveal>
@@ -118,8 +118,8 @@ export default function AssistantPage() {
                 {messages.length === 0 && (
                   <div className="h-full flex items-center justify-center text-center">
                     <div>
-                      <MessageCircle size={48} className="mx-auto text-muted mb-4 opacity-50" />
-                      <p className="text-muted">Start a conversation by asking a question</p>
+                      <MessageCircle size={48} className="mx-auto text-muted-foreground mb-4 opacity-50" />
+                      <p className="text-muted-foreground">Start a conversation by asking a question</p>
                     </div>
                   </div>
                 )}
@@ -183,7 +183,7 @@ export default function AssistantPage() {
                     key={idx}
                     onClick={() => handleSendMessage(question)}
                     disabled={loading}
-                    className="w-full text-left p-3 rounded-lg bg-card hover:bg-card/80 border border-border hover:border-primary/50 transition-all text-sm text-muted hover:text-foreground disabled:opacity-50"
+                    className="w-full text-left p-3 rounded-lg bg-card hover:bg-card/80 border border-border hover:border-primary/50 transition-all text-sm text-muted-foreground hover:text-foreground disabled:opacity-50"
                   >
                     {question}
                   </button>

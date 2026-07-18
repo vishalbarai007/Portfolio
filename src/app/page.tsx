@@ -8,10 +8,20 @@ import OtherTechstack from "@/components/sections/home/othertechstack"
 import LandingProject from "@/components/sections/home/landing-project"
 import GitHubContributions from "@/components/sections/home/github-contributions"
 import { HeroParallaxDemo } from "@/components/sections/home/hero-parallax-demo"
+import { ThemeProvider } from "@/components/layout/theme-provider"
+import MacDock from "@/components/layout/mac-dock"
+
 
 export default function Home() {
   return (
     <>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem={false}
+        storageKey="theme"
+      >      
+      
       <ClickSpark
         sparkColor='var(--primary)'
         sparkSize={20}
@@ -19,15 +29,18 @@ export default function Home() {
         sparkCount={8}
         duration={500}
       >
-        <Hero />
-        <HeroParallaxDemo />
-        <DomainShowcase />
-        <Techstack />
-        <OtherTechstack />
-        <LandingProject />
-        <FeaturedProjects />
-        <GitHubContributions isDark={true} />
-      </ClickSpark>
+          <Hero />
+          <HeroParallaxDemo />
+          <DomainShowcase />
+          <Techstack />
+          <OtherTechstack />
+          <LandingProject />
+          <FeaturedProjects />
+          <GitHubContributions isDark={true} />
+          <MacDock />
+        </ClickSpark>
+      </ThemeProvider>
+
     </>
   )
 }

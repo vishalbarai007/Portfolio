@@ -16,6 +16,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
+import { SocialHoverCard } from "./social-hover-card";
 
 const socialLinks = [
   { label: "Twitter", href: "https://twitter.com", icon: Twitter },
@@ -37,19 +38,19 @@ export default function ContactFooter() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <footer className="bg-background border-t border-border mt-20">
+    <footer id="contact" className="bg-background border-t border-border mt-20">
       {/* Quote Section */}
-      <div className="max-w-3xl mx-auto px-4 py-24 text-center">
+      <div className="max-w-3xl mx-auto px-4 py-24 text-center flex flex-col justify-center items-center">
         <blockquote className="text-2xl md:text-3xl lg:text-4xl font-serif italic text-foreground leading-relaxed">
-          &ldquo;Do so much work that it would be unreasonable
-          <br className="hidden md:block" /> for you to not be successful.&rdquo;
+          &ldquo;How do you expect to learn how to think
+          <br className="hidden md:block" /> When you hardly ever practice thinking !&rdquo;
         </blockquote>
-        <p className="mt-6 text-xs uppercase tracking-[0.25em] text-muted-foreground font-semibold">
-          Alex Hormozi
+        <p className=" mt-6 text-xs uppercase tracking-[0.25em] text-muted-foreground font-semibold">
+          - Shwetabh Gangwar
         </p>
       </div>
 
-      <Separator className="bg-border/60" />
+      {/* <Separator className="bg-border/60" /> */}
 
       {/* Get in Touch Section */}
       <div className="max-w-2xl mx-auto px-4 py-20 text-center space-y-8">
@@ -72,7 +73,7 @@ export default function ContactFooter() {
             href="mailto:vishalbaraiofficial02@gmail.com"
             className="text-foreground underline underline-offset-4 hover:text-foreground/80 transition-colors font-medium"
           >
-            vishalbaraiofficial02@gmail.com
+            here
           </a>{" "}
           or connect on{" "}
           <a
@@ -98,59 +99,29 @@ export default function ContactFooter() {
 
           <div className="order-1 md:order-2 flex items-center gap-6">
             {socialLinks.map((link) => (
-              <a
+              <SocialHoverCard
                 key={link.label}
+                platform={link.label}
                 href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-foreground transition-colors"
               >
-                {link.label}
-              </a>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  {link.label}
+                </a>
+              </SocialHoverCard>
             ))}
           </div>
         </div>
       </div>
 
-      <Separator className="bg-border/60" />
+      {/* <Separator className="bg-border/60" /> */}
 
       {/* Icon Row */}
-      <div className="flex items-center justify-center gap-2 py-4 flex-wrap">
-        {iconLinks.map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            target={link.external ? "_blank" : undefined}
-            rel={link.external ? "noopener noreferrer" : undefined}
-            aria-label={link.label}
-          >
-            <Button
-              variant="ghost"
-              size="icon"
-              className={cn(
-                "rounded-full h-10 w-10 text-muted-foreground hover:text-foreground hover:bg-muted/60 border border-transparent hover:border-border transition-all"
-              )}
-            >
-              <link.icon className="h-4 w-4" />
-            </Button>
-          </a>
-        ))}
-
-        {/* Theme Toggle */}
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="rounded-full h-10 w-10 text-muted-foreground hover:text-foreground hover:bg-muted/60 border border-transparent hover:border-border transition-all"
-          aria-label="Toggle theme"
-        >
-          {theme === "dark" ? (
-            <Sun className="h-4 w-4" />
-          ) : (
-            <Moon className="h-4 w-4" />
-          )}
-        </Button>
-      </div>
+    
     </footer>
   );
 }

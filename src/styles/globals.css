@@ -34,7 +34,7 @@
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 240 5.9% 90%;
+  --border: 0 0% 0%;
   --input: 240 5.9% 90%;
   --ring: 240 5.9% 10%;
  
@@ -73,7 +73,7 @@
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
  
-  --border: 240 3.7% 22%;           /* Zinc-700 — more visible white-ish border */
+  --border: 0 0% 100%;              /* Pure white border */
   --input: 240 3.7% 15.9%;
   --ring: 0 0% 98%;                 /* White ring focus */
 

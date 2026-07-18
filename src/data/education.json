@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "institution": "MCT's Rajiv Gandhi Institute Of Technology",
+    "degree": "Bachelor of Technology - BTech",
+    "field": "COMPUTER AND INFORMATION SCIENCES AND SUPPORT SERVICES",
+    "periodText": "Jul 2023 – Jul 2027",
+    "skills": ["Creative Problem Solving", "Project Management", "Software Development", "Web Development", "Team Leadership"],
+    "linkText": "MCT RGIT MUMBAI - MCT Rajiv Gandhi Institute Of Technology",
+    "linkUrl": "https://mctrgit.ac.in/",
+    "logo": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=100"
+  },
+  {
+    "id": 2,
+    "institution": "LATE SHRI VISHNU WAMAN THAKUR CHARITABLE TRUST VIVA INSTITUTE OF PHARMACY",
+    "degree": "Higher Secondary education",
+    "field": "Computer Science",
+    "periodText": "Jun 2021 – Jun 2023",
+    "grade": "83%",
+    "description": "Completed My Higher Secondary Education in Top college in Mumbai, Known for its quality of education and resources.",
+    "linkText": "VIVA College of Arts, Commerce and Science",
+    "linkUrl": "https://vivacollege.org/",
+    "logo": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=100"
+  },
+  {
+    "id": 3,
+    "institution": "U.S Ostwal English Academy High school and Jr. College",
+    "degree": "SSC",
+    "field": "EDUCATION",
+    "periodText": "Apr 2020 – Apr 2021",
+    "grade": "92%",
+    "description": "Completed My Secondary Education from 1 of the best schools with Multiple Facilities.",
+    "linkText": "US Ostwal English Academy High school and Jr. college",
+    "linkUrl": "https://usostwal.org/",
+    "logo": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=100"
+  }
+]

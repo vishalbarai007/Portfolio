@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import about from "@/data/about.json"
 import skills from "@/data/skills.json"
 import { Briefcase, Code, Code2,  Github,  Linkedin,  Mail, MapPin, Server, Shield, Smartphone, Sparkles } from "lucide-react"
+import { SkillHoverCard } from "@/components/layout/skill-hover-card"
 
 export default function AboutPage() {
 
@@ -201,23 +202,24 @@ export default function AboutPage() {
                           {(skillList as string[]).map((skill) => {
                             const logo = techLogos[skill]
                             return (
-                              <Badge
-                                key={skill}
-                                variant="secondary"
-                                className="bg-muted hover:bg-muted/80 text-card-foreground border border-border hover:border-primary/30 transition-all cursor-default pl-2 pr-3 py-1.5 gap-2"
-                              >
-                                {logo && (
-                                  <img
-                                    src={logo}
-                                    alt={skill}
-                                    className="w-4 h-4 object-contain"
-                                    onError={(e) => {
-                                      e.currentTarget.style.display = 'none'
-                                    }}
-                                  />
-                                )}
-                                <span>{skill}</span>
-                              </Badge>
+                              <SkillHoverCard key={skill} skill={skill} logo={logo}>
+                                <Badge
+                                  variant="secondary"
+                                  className="bg-muted hover:bg-muted/80 text-card-foreground border border-border hover:border-primary/30 transition-all cursor-default pl-2 pr-3 py-1.5 gap-2"
+                                >
+                                  {logo && (
+                                    <img
+                                      src={logo}
+                                      alt={skill}
+                                      className="w-4 h-4 object-contain"
+                                      onError={(e) => {
+                                        e.currentTarget.style.display = 'none'
+                                      }}
+                                    />
+                                  )}
+                                  <span>{skill}</span>
+                                </Badge>
+                              </SkillHoverCard>
                             )
                           })}
                         </div>

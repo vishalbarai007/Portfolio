@@ -66,6 +66,7 @@ const LandingProject = () => {
 
     return (
         <div>
+            <h1 className='h-[100px] w-full flex justify-center items-center text-5xl font-bold'>Gallery</h1>
             <div style={{ height: '80vh', position: 'relative' }}>
                 <InfiniteMenu items={items} />
             </div>

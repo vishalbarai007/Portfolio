@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { Menu, X, Github, Linkedin, Mail, ArrowRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ThemeToggle } from "./theme-toggle"
+import { SocialHoverCard } from "./social-hover-card"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -179,16 +180,21 @@ export default function Navbar() {
                   <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-6 font-semibold">Socials</h3>
                   <div className="grid grid-cols-1 gap-4">
                     {socialLinks.map((social) => (
-                      <a
+                      <SocialHoverCard
                         key={social.label}
+                        platform={social.label}
                         href={social.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-3 text-lg hover:text-primary transition-colors group"
                       >
-                        <social.icon className="w-5 h-5" />
-                        <span>{social.label}</span>
-                      </a>
+                        <a
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-3 text-lg hover:text-primary transition-colors group"
+                        >
+                          <social.icon className="w-5 h-5" />
+                          <span>{social.label}</span>
+                        </a>
+                      </SocialHoverCard>
                     ))}
                   </div>
                 </div>
