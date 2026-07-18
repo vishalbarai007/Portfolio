@@ -74,98 +74,107 @@ export default function GitHubContributions({ isDark = true }: { isDark?: boolea
     }
     
     return (
-        <div className={`p-8 rounded-2xl shadow-2xl transition-all duration-300 ${isDark
-            ? 'bg-linear-to-br from-[#0d1117] to-[#161b22] border border-gray-800'
-            : 'bg-linear-to-br from-white to-gray-50 border border-gray-200'
-            }`}>
-            {/* Header */}
-            <div className="mb-6">
-                <h2 className={`text-2xl font-bold mb-1 transition-colors duration-300 ${isDark ? 'text-white' : 'text-gray-900'
-                    }`}>
-                    GitHub Contributions
-                </h2>
-                <p className={`text-sm transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
-                    }`}>
-                    @vishalbarai007 · 2025
-                </p>
-            </div>
-
-            {/* Statistics Cards */}
-            <div className="grid grid-cols-3 gap-4 mb-6">
-                <div className={`p-4 rounded-xl transition-colors duration-300 ${isDark ? 'bg-gray-800/50' : 'bg-gray-100'
-                    }`}>
-                    <p className={`text-xs font-medium mb-1 transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
-                        }`}>
-                        Total Contributions
-                    </p>
-                    <p className={`text-2xl font-bold transition-colors duration-300 ${isDark ? 'text-green-400' : 'text-green-600'
-                        }`}>
-                        {stats.total}
+        <section className="py-24 px-4 bg-background">
+            <div className="max-w-7xl mx-auto w-full">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
+                        GitHub Contributions
+                    </h2>
+                    <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+                        My open-source contributions and development activity on GitHub.
                     </p>
                 </div>
 
-                <div className={`p-4 rounded-xl transition-colors duration-300 ${isDark ? 'bg-gray-800/50' : 'bg-gray-100'
+                <div className={`p-8 rounded-2xl shadow-2xl transition-all duration-300 ${isDark
+                    ? 'bg-linear-to-br from-[#0d1117] to-[#161b22] border border-gray-800'
+                    : 'bg-linear-to-br from-white to-gray-50 border border-gray-200'
                     }`}>
-                    <p className={`text-xs font-medium mb-1 transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
+                    {/* Header */}
+                    <div className="mb-6">
+                        <p className={`text-sm font-semibold uppercase tracking-wider transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
+                            }`}>
+                            @vishalbarai007 · 2025
+                        </p>
+                    </div>
+
+                    {/* Statistics Cards */}
+                    <div className="grid grid-cols-3 gap-4 mb-6">
+                        <div className={`p-4 rounded-xl transition-colors duration-300 ${isDark ? 'bg-gray-800/50' : 'bg-gray-100'
+                            }`}>
+                            <p className={`text-xs font-medium mb-1 transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
+                                }`}>
+                                Total Contributions
+                            </p>
+                            <p className={`text-2xl font-bold transition-colors duration-300 ${isDark ? 'text-green-400' : 'text-green-600'
+                                }`}>
+                                {stats.total}
+                            </p>
+                        </div>
+
+                        <div className={`p-4 rounded-xl transition-colors duration-300 ${isDark ? 'bg-gray-800/50' : 'bg-gray-100'
+                            }`}>
+                            <p className={`text-xs font-medium mb-1 transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
+                                }`}>
+                                Current Streak
+                            </p>
+                            <p className={`text-2xl font-bold transition-colors duration-300 ${isDark ? 'text-orange-400' : 'text-orange-600'
+                                }`}>
+                                {stats.currentStreak} 🔥
+                            </p>
+                        </div>
+
+                        <div className={`p-4 rounded-xl transition-colors duration-300 ${isDark ? 'bg-gray-800/50' : 'bg-gray-100'
+                            }`}>
+                            <p className={`text-xs font-medium mb-1 transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
+                                }`}>
+                                Longest Streak
+                            </p>
+                            <p className={`text-2xl font-bold transition-colors duration-300 ${isDark ? 'text-blue-400' : 'text-blue-600'
+                                }`}>
+                                {stats.longestStreak} ⚡
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Contribution Calendar */}
+                    <div className={`p-6 flex justify-center items-center transition-colors duration-300 rounded-xl ${isDark ? 'bg-[#161b22]' : 'bg-white border border-gray-200'
                         }`}>
-                        Current Streak
-                    </p>
-                    <p className={`text-2xl font-bold transition-colors duration-300 ${isDark ? 'text-orange-400' : 'text-orange-600'
+                        <ActivityCalendar
+                            data={data}
+                            blockSize={14}
+                            blockMargin={4}
+                            fontSize={14}
+                            colorScheme={isDark ? "dark" : "light"}
+                            theme={{
+                                dark: [
+                                    "#161B22",
+                                    "#0e4429",
+                                    "#006d32",
+                                    "#26a641",
+                                    "#39d353",
+                                ],
+                                light: [
+                                    "#ebedf0",
+                                    "#9be9a8",
+                                    "#40c463",
+                                    "#30a14e",
+                                    "#216e39",
+                                ],
+                            }}
+                            labels={{
+                                totalCount: `{{count}} contributions in 2025`,
+                            }}
+                            showWeekdayLabels
+                        />
+                    </div>
+
+                    {/* Footer Info */}
+                    <div className={`mt-4 text-xs text-center transition-colors duration-300 ${isDark ? 'text-gray-500' : 'text-gray-500'
                         }`}>
-                        {stats.currentStreak} 🔥
-                    </p>
+                        Hover over squares to see contribution details
+                    </div>
                 </div>
-
-                <div className={`p-4 rounded-xl transition-colors duration-300 ${isDark ? 'bg-gray-800/50' : 'bg-gray-100'
-                    }`}>
-                    <p className={`text-xs font-medium mb-1 transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
-                        }`}>
-                        Longest Streak
-                    </p>
-                    <p className={`text-2xl font-bold transition-colors duration-300 ${isDark ? 'text-blue-400' : 'text-blue-600'
-                        }`}>
-                        {stats.longestStreak} ⚡
-                    </p>
-                </div>
             </div>
-
-            {/* Contribution Calendar */}
-            <div className={`p-6 flex justify-center items-center transition-colors duration-300 ${isDark ? 'bg-[#161b22]' : 'bg-white border border-gray-200'
-                }`}>
-                <ActivityCalendar
-                    data={data}
-                    blockSize={14}
-                    blockMargin={4}
-                    fontSize={14}
-                    colorScheme={isDark ? "dark" : "light"}
-                    theme={{
-                        dark: [
-                            "#161B22",
-                            "#0e4429",
-                            "#006d32",
-                            "#26a641",
-                            "#39d353",
-                        ],
-                        light: [
-                            "#ebedf0",
-                            "#9be9a8",
-                            "#40c463",
-                            "#30a14e",
-                            "#216e39",
-                        ],
-                    }}
-                    labels={{
-                        totalCount: `{{count}} contributions in 2025`,
-                    }}
-                    showWeekdayLabels
-                />
-            </div>
-
-            {/* Footer Info */}
-            <div className={`mt-4 text-xs text-center transition-colors duration-300 ${isDark ? 'text-gray-500' : 'text-gray-500'
-                }`}>
-                Hover over squares to see contribution details
-            </div>
-        </div>
+        </section>
     );
 }

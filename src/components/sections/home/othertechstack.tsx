@@ -21,7 +21,7 @@ const techLogos = [
 
 export default function OtherTechstack() {
   return (
-    <div className="w-full h-auto flex justify-center items-center">
+    <div className="w-full h-auto flex justify-center items-center py-16">
       <div className="w-full flex flex-col justify-center items-center gap-10 relative overflow-hidden">
         <LogoLoop
           logos={techLogos}

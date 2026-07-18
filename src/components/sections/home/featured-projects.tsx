@@ -120,11 +120,11 @@ export default function FeaturedProjects() {
           <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 rounded-full border border-border bg-muted/30 backdrop-blur-sm">
             <span className="text-sm font-medium text-muted-foreground">Portfolio</span>
           </div>
-          <h2 ref={titleRef} className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+          <h2 ref={titleRef} className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
             Featured Projects
           </h2>
-          <p ref={descRef} className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Showcase of recent work across different domains
+          <p ref={descRef} className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+            Showcase of recent work across different domains.
           </p>
         </div>
 

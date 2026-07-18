@@ -45,10 +45,10 @@ export const Timeline = ({
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground max-w-4xl">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
           {title}
         </h2>
-        <p className="text-muted-foreground text-sm md:text-base max-w-xl">
+        <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl">
           {description}
         </p>
       </div>

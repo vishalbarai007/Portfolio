@@ -623,7 +623,7 @@ class ArcballControl {
   }
 }
 
-interface MenuItem {
+export interface MenuItem {
   image: string;
   link: string;
   title: string;
@@ -1054,9 +1054,10 @@ const defaultItems: MenuItem[] = [
 
 interface InfiniteMenuProps {
   items?: MenuItem[];
+  onItemClick?: (item: MenuItem) => void;
 }
 
-const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
+const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [], onItemClick }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null) as MutableRefObject<HTMLCanvasElement | null>;
   const [activeItem, setActiveItem] = useState<MenuItem | null>(null);
   const [isMoving, setIsMoving] = useState<boolean>(false);
@@ -1092,7 +1093,12 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
   }, [items]);
 
   const handleButtonClick = () => {
-    if (!activeItem?.link) return;
+    if (!activeItem) return;
+    if (onItemClick) {
+      onItemClick(activeItem);
+      return;
+    }
+    if (!activeItem.link) return;
     if (activeItem.link.startsWith('http')) {
       window.open(activeItem.link, '_blank');
     } else {

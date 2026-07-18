@@ -48,9 +48,11 @@ export default function ResumePage() {
     <div className="min-h-screen bg-background py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Resume</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Generate domain-specific resumes tailored to your professional focus
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
+            Resume
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+            Generate domain-specific resumes tailored to your professional focus.
           </p>
         </ScrollReveal>
 

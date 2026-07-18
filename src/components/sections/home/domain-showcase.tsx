@@ -52,14 +52,14 @@ export default function DomainShowcase() {
   const cardsRef = useRef<HTMLDivElement>(null)
 
   return (
-    <section ref={sectionRef} className="min-h-screen py-0 px-4 bg-background flex items-center">
+    <section ref={sectionRef} className="min-h-screen py-24 px-4 bg-background flex items-center">
       <div className="max-w-7xl mx-auto w-full">
         <div className="text-center mb-16">
-          <h2 ref={titleRef} className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <h2 ref={titleRef} className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
             Areas of Expertise
           </h2>
-          <p ref={descRef} className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore my professional experience across four distinct technical domains
+          <p ref={descRef} className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+            Explore my professional experience across four distinct technical domains.
           </p>
         </div>
 

@@ -80,7 +80,7 @@ export function SocialHoverCard({ platform, href, children }: SocialHoverCardPro
         {/* Banner */}
         <div className="relative h-24 w-full bg-neutral-900 border-b border-border/40 overflow-hidden">
           <Image
-            src="/Images/mypersonal/banner.png"
+            src="/Images/mypersonal/banner.jpg"
             alt="Vishal Barai Banner"
             fill
             sizes="340px"

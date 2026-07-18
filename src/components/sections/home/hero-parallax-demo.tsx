@@ -10,93 +10,94 @@ export const products = [
     title: "Adventurer",
     link: "https://github.com/vishalbarai007/Adventurer",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      "/Images/Projects/thumbnails/Adv.jpg",
   },
   {
     title: "Weather Forecast",
     link: "https://weather-forecast-six-theta.vercel.app/",
     thumbnail:
-      "/Images/Projects/thumbnails/weather.png",
+      "/Images/Projects/thumbnails/weather.jpg",
   },
   {
     title: "ScriptCrafter",
     link: "https://aiscripter-lake.vercel.app/",
     thumbnail:
-      "/Images/Projects/thumbnails/ScriptCrafter.png",
+      "/Images/Projects/thumbnails/ScriptCrafter.jpg",
   },
 
   {
     title: "Cupid",
     link: "https://cupid2-0-programmer-s-date.vercel.app/",
     thumbnail:
-      "/Images/Projects/thumbnails/cupid.png",
+      "/Images/Projects/thumbnails/cupid.jpg",
   },
   {
     title: "DietPlanner",
     link: "https://die-ate-planner.vercel.app",
     thumbnail:
-      "/Images/Projects/thumbnails/DietPlanner.png",
+      "/Images/Projects/thumbnails/DietPlanner.jpg",
   },
   {
     title: "PhotoBooth",
     link: "https://photo-booth-opal.vercel.app/",
     thumbnail:
-      "/Images/Projects/thumbnails/PhotoBooth.png",
+      "/Images/Projects/thumbnails/PhotoBooth.jpg",
   },
 
   {
     title: "Fire Predict",
     link: "https://forest-fire-predictor-nine.vercel.app/",
     thumbnail:
-      "/Images/Projects/thumbnails/Firepredict.png",
+      "/Images/Projects/thumbnails/Firepredict.jpg",
   },
   {
     title: "Momentum Science Academy",
     link: "https://momentum-science-academy.vercel.app/",
     thumbnail:
-      "/Images/Projects/thumbnails/momentum.png",
+      "/Images/Projects/thumbnails/momentum.jpg",
   },
   {
     title: "Zodiac 2025",
     link: "https://zodiac.rgitstudentcouncil.in/",
     thumbnail:
-      "/Images/Projects/thumbnails/Zodiac2025.png",
+      "/Images/Projects/thumbnails/Zodiac2025.jpg",
   },
   {
     title: "Cess RGIT",
     link: "https://rgitcess.in/",
     thumbnail:
-      "/Images/Projects/thumbnails/cess.png",
+      "/Images/Projects/thumbnails/cess.jpg",
   },
   {
     title: "Phoenix Infra",
     link: "https://phoenixinfra.in/",
     thumbnail:
-      "/Images/Projects/thumbnails/Phoenix.png",
+      "/Images/Projects/thumbnails/Phoenix.jpg",
   },
 
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    title: "PhotoBooth",
+    link: "https://photo-booth-opal.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+      "/Images/Projects/thumbnails/PhotoBooth.jpg",
+  },
+
+  {
+    title: "Fire Predict",
+    link: "https://forest-fire-predictor-nine.vercel.app/",
+    thumbnail:
+      "/Images/Projects/thumbnails/Firepredict.jpg",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    title: "Adventurer",
+    link: "https://github.com/vishalbarai007/Adventurer",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+      "/Images/Projects/thumbnails/Adv.jpg",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    title: "Momentum Science Academy",
+    link: "https://momentum-science-academy.vercel.app/",
     thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+      "/Images/Projects/thumbnails/momentum.jpg",
   },
 ];

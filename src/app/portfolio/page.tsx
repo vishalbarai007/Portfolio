@@ -81,11 +81,11 @@ export default function PortfolioPage() {
             <span className="text-sm font-medium text-primary">Explore My Work</span>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
             Portfolio
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover my professional work across four distinct technical domains, showcasing expertise in web, mobile, systems, and security
+          <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+            Discover my professional work across four distinct technical domains, showcasing expertise in web, mobile, systems, and security.
           </p>
 
           {/* Stats Overview */}

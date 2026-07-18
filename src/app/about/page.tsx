@@ -1,15 +1,14 @@
 "use client"
 
-// import ScrollReveal from "@/components/sections/scroll-reveal"
+import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import about from "@/data/about.json"
 import skills from "@/data/skills.json"
-import { Briefcase, Code, Code2,  Github,  Linkedin,  Mail, MapPin, Server, Shield, Smartphone, Sparkles } from "lucide-react"
+import { Code2, Github, Linkedin, Mail, MapPin, Server, Shield, Smartphone } from "lucide-react"
 import { SkillHoverCard } from "@/components/layout/skill-hover-card"
 
 export default function AboutPage() {
-
   const techLogos: Record<string, string> = {
     "React": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "Next.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
@@ -22,7 +21,7 @@ export default function AboutPage() {
     "GraphQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
     "Git": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     "Docker": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    "AWS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "AWS": "https://cdn.jsdelivr.net/gh/devicons@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     "React Native": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "Flutter": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
     "Swift": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
@@ -39,6 +38,7 @@ export default function AboutPage() {
     "Android Studio": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
     "Xcode": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg"
   }
+
   const domainConfig = {
     web: {
       icon: Code2,
@@ -70,9 +70,6 @@ export default function AboutPage() {
     }
   }
 
-
-
-
   return (
     <div className="min-h-screen bg-background">
       {/* Decorative background elements */}
@@ -81,87 +78,109 @@ export default function AboutPage() {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
-        {/* Hero Section */}
-        <div className="text-center space-y-6 py-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-primary">Available for opportunities</span>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-16">
+        
+        {/* Profile Hero Section */}
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 py-8">
+          {/* Avatar Container */}
+          <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden border border-border bg-muted shrink-0 shadow-lg group">
+            <Image
+              src="/Images/mypersonal/avatar.png"
+              alt={about.name}
+              fill
+              sizes="(max-w-768px) 160px, 192px"
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              priority
+            />
           </div>
-
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground">
+          
+          <div className="space-y-4 text-center md:text-left flex-1">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-semibold text-primary">
+              <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
+              Available for opportunities
+            </div>
+            
+            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-foreground leading-none">
               {about.name}
             </h1>
-            <p className="text-2xl md:text-3xl text-muted-foreground font-light">
+            <p className="text-xl md:text-2xl text-muted-foreground font-medium">
               {about.title}
             </p>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl">
               {about.bio}
             </p>
-          </div>
 
-          {/* Social Links */}
-          <div className="flex items-center justify-center gap-4 pt-6">
-            <a href={`https://github.com/vishalbarai007`}
-              className="group p-3 rounded-xl bg-card hover:bg-accent/10 border border-border hover:border-primary/50 transition-all duration-300 hover:scale-110 shadow-soft hover:shadow-medium">
-              <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a href={`https://linkedin.com/in/vishalbarai`}
-              className="group p-3 rounded-xl bg-card hover:bg-accent/10 border border-border hover:border-primary/50 transition-all duration-300 hover:scale-110 shadow-soft hover:shadow-medium">
-              <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-            </a>
-            <a href={`mailto:${about.email}`}
-              className="group p-3 rounded-xl bg-card hover:bg-accent/10 border border-border hover:border-accent/50 transition-all duration-300 hover:scale-110 shadow-soft hover:shadow-medium">
-              <Mail className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors" />
-            </a>
+            {/* Social Links */}
+            <div className="flex items-center justify-center md:justify-start gap-4 pt-4">
+              <a href={`https://github.com/vishalbarai007`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-3 rounded-xl bg-card hover:bg-accent/10 border border-border hover:border-primary/50 transition-all duration-300 hover:scale-110 shadow-soft hover:shadow-medium">
+                <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a href={`https://linkedin.com/in/vishalbarai`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-3 rounded-xl bg-card hover:bg-accent/10 border border-border hover:border-primary/50 transition-all duration-300 hover:scale-110 shadow-soft hover:shadow-medium">
+                <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+              <a href={`mailto:${about.email}`}
+                className="group p-3 rounded-xl bg-card hover:bg-accent/10 border border-border hover:border-accent/50 transition-all duration-300 hover:scale-110 shadow-soft hover:shadow-medium">
+                <Mail className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors" />
+              </a>
+            </div>
           </div>
         </div>
 
         {/* About & Contact Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* About Card */}
-          <Card className="md:col-span-2 bg-card border-border shadow-soft hover:shadow-medium transition-all duration-300 group">
+          <Card className="md:col-span-2 bg-card/60 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 shadow-soft hover:shadow-medium group">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className={`p-2 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-all`}>
+                <div className="p-2.5 rounded-xl bg-primary/15 border border-primary/20 group-hover:bg-primary/25 transition-all">
                   <Code2 className="w-5 h-5 text-primary" />
                 </div>
-                <CardTitle className="text-2xl text-card-foreground">About Me</CardTitle>
+                <CardTitle className="text-2xl text-foreground font-bold tracking-tight">About Me</CardTitle>
               </div>
             </CardHeader>
-            <CardContent className="space-y-4 text-muted-foreground">
-              <p className="leading-relaxed">{about.summary}</p>
-              <p className="leading-relaxed">
-                I'm passionate about solving complex technical challenges and continuously learning new technologies.
-                My diverse background across multiple domains allows me to bring unique perspectives to every project.
+            <CardContent className="space-y-4 text-muted-foreground text-base leading-relaxed">
+              <p>{about.summary}</p>
+              <p>
+                I'm passionate about solving complex technical challenges, writing clean and modular code, and continuously learning new technologies.
+                My diverse background across multiple domains allows me to bring unique perspectives and cross-functional solutions to every project.
               </p>
             </CardContent>
           </Card>
 
           {/* Contact Card */}
-          <Card className="bg-card border-border shadow-soft hover:shadow-medium transition-all duration-300">
+          <Card className="bg-card/60 backdrop-blur-sm border-border hover:border-accent/50 transition-all duration-300 shadow-soft hover:shadow-medium group">
             <CardHeader>
-              <CardTitle className="text-xl text-card-foreground">Connect</CardTitle>
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-xl bg-accent/15 border border-accent/20 group-hover:bg-accent/25 transition-all">
+                  <Mail className="w-5 h-5 text-accent" />
+                </div>
+                <CardTitle className="text-2xl text-foreground font-bold tracking-tight">Connect</CardTitle>
+              </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="flex items-start gap-3 group cursor-pointer p-2 rounded-lg hover:bg-muted/50 transition-colors">
-                <div className="p-2 rounded-lg bg-primary/10">
+              <div className="flex items-center gap-3.5 group cursor-pointer p-2.5 rounded-xl hover:bg-muted/40 transition-colors border border-transparent hover:border-border/35">
+                <div className="p-2.5 rounded-xl bg-primary/10 border border-primary/20">
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-card-foreground font-medium">{about.location}</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Location</p>
+                  <p className="text-sm font-medium text-foreground">{about.location}</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 group cursor-pointer p-2 rounded-lg hover:bg-muted/50 transition-colors">
-                <div className="p-2 rounded-lg bg-accent/10">
+              <div className="flex items-center gap-3.5 group cursor-pointer p-2.5 rounded-xl hover:bg-muted/40 transition-colors border border-transparent hover:border-border/35">
+                <div className="p-2.5 rounded-xl bg-accent/10 border border-accent/20">
                   <Mail className="w-4 h-4 text-accent" />
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-card-foreground font-medium break-all">{about.email}</p>
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Email</p>
+                  <p className="text-sm font-medium text-foreground truncate">{about.email}</p>
                 </div>
               </div>
             </CardContent>
@@ -171,10 +190,12 @@ export default function AboutPage() {
         {/* Skills Section */}
         <div className="space-y-8">
           <div className="text-center space-y-2">
-            <h2 className="text-4xl font-bold text-foreground">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
               Skills & Expertise
             </h2>
-            <p className="text-muted-foreground">Technologies I work with across different domains</p>
+            <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+              Technologies I work with across different domains.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
