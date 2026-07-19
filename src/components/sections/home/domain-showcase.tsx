@@ -66,19 +66,29 @@ export default function DomainShowcase() {
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {domains.map((domain) => {
             const Icon = domain.icon
+            const bgConfig: Record<string, string> = {
+              web: "bg-blue-500/10 border-blue-500/20 text-blue-400",
+              app: "bg-green-500/10 border-green-500/20 text-green-400",
+              software: "bg-purple-500/10 border-purple-500/20 text-purple-400",
+              security: "bg-red-500/10 border-red-500/20 text-red-400",
+            }
+            const activeBg = bgConfig[domain.id] || "bg-primary/10 border-primary/20 text-primary"
+
             return (
               <Link key={domain.id} href={domain.href} className="group">
                 <Card className="domain-card-item h-full border-border hover:border-primary/50 transition-all cursor-pointer bg-card/50 backdrop-blur-sm shadow-soft hover:shadow-medium">
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
-                      <Icon className={`${domain.color} w-8 h-8`} />
+                      <div className={`w-12 h-12 flex items-center justify-center rounded-xl border ${activeBg} group-hover:scale-105 transition-transform duration-300`}>
+                        <Icon className="w-6 h-6" />
+                      </div>
                     </div>
                     <CardTitle className="text-2xl text-card-foreground group-hover:text-primary transition-colors">{domain.title}</CardTitle>
                     <CardDescription className="text-base text-muted-foreground">{domain.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Button variant="ghost" className="gap-2 group-hover:translate-x-1 transition-transform p-0 hover:bg-transparent">
-                      Explore <ArrowRight size={16} />
+                      Explore <ArrowRight className="w-4 h-4" />
                     </Button>
                   </CardContent>
                 </Card>

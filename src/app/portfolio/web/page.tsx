@@ -59,16 +59,16 @@ export default function WebPortfolioPage() {
     <div className="min-h-screen bg-background">
       {/* Decorative background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none opacity-40">
-        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header Section */}
         <div className="mb-16 space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-            <Code2 className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Web Development</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20">
+            <Code2 className="w-4 h-4 text-blue-400" />
+            <span className="text-sm font-medium text-blue-400">Web Development</span>
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold text-foreground">
@@ -82,8 +82,8 @@ export default function WebPortfolioPage() {
           {!loading && projects.length > 0 && (
             <div className="flex flex-wrap items-center gap-6 pt-4">
               <div className="flex items-center gap-2">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Code2 className="w-4 h-4 text-primary" />
+                <div className="p-2 rounded-lg bg-blue-500/10">
+                  <Code2 className="w-4 h-4 text-blue-400" />
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-foreground">{projects.length}</div>
@@ -122,8 +122,8 @@ export default function WebPortfolioPage() {
         {loading && (
           <div className="flex flex-col justify-center items-center py-20 space-y-4">
             <div className="relative">
-              <Loader2 className="animate-spin text-primary" size={48} />
-              <div className="absolute inset-0 blur-xl bg-primary/20 animate-pulse"></div>
+              <Loader2 className="animate-spin text-blue-500" size={48} />
+              <div className="absolute inset-0 blur-xl bg-blue-500/20 animate-pulse"></div>
             </div>
             <p className="text-muted-foreground">Loading projects...</p>
           </div>
@@ -152,12 +152,12 @@ export default function WebPortfolioPage() {
             {projects.map((project, idx) => (
               <Card
                 key={project.id}
-                className="group h-full bg-card border-border hover:border-primary/50 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-[1.02] flex flex-col"
+                className="group h-full bg-card border-border hover:border-blue-500/50 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-[1.02] flex flex-col"
                 style={{ animationDelay: `${idx * 50}ms` }}
               >
                 <CardHeader className="flex-none">
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <CardTitle className="text-lg text-card-foreground group-hover:text-primary transition-colors line-clamp-1">
+                    <CardTitle className="text-lg text-card-foreground group-hover:text-blue-400 transition-colors line-clamp-1">
                       {project.name}
                     </CardTitle>
                     {project.stars > 0 && (
@@ -216,7 +216,7 @@ export default function WebPortfolioPage() {
                       asChild
                       variant="outline"
                       size="sm"
-                      className="flex-1 gap-2 hover:bg-primary/10 hover:text-primary hover:border-primary/50"
+                      className="flex-1 gap-2 hover:bg-blue-500/10 hover:text-blue-400 hover:border-blue-500/50"
                     >
                       <a
                         href={project.url}
@@ -255,14 +255,14 @@ export default function WebPortfolioPage() {
         {!loading && projects.length === 0 && !error && (
           <Card className="bg-card border-border shadow-soft">
             <CardContent className="py-16 text-center space-y-4">
-              <div className="mx-auto w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <Github className="w-8 h-8 text-primary" />
+              <div className="mx-auto w-16 h-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-4">
+                <Github className="w-8 h-8 text-blue-400" />
               </div>
               <h3 className="text-xl font-semibold text-foreground">No Projects Found</h3>
               <p className="text-muted-foreground max-w-md mx-auto">
                 Configure your GitHub API integration to display your web development projects here.
               </p>
-              <Button className="mt-4 bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button className="mt-4 bg-blue-500 hover:bg-blue-600 text-primary-foreground">
                 Configure GitHub Integration
               </Button>
             </CardContent>

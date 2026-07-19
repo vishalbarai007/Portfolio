@@ -23,9 +23,9 @@ export default function AboutPage() {
     "Docker": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
     "AWS": "https://cdn.jsdelivr.net/gh/devicons@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     "React Native": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    "Flutter": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-    "Swift": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
-    "Kotlin": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+    // "Flutter": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+    // "Swift": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
+    // "Kotlin": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
     "Firebase": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
     "Python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     "Figma": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
@@ -85,7 +85,7 @@ export default function AboutPage() {
           {/* Avatar Container */}
           <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden border border-border bg-muted shrink-0 shadow-lg group">
             <Image
-              src="/Images/mypersonal/avatar.png"
+              src="/Images/Milestones/profile2.png"
               alt={about.name}
               fill
               sizes="(max-w-768px) 160px, 192px"
@@ -95,12 +95,12 @@ export default function AboutPage() {
           </div>
           
           <div className="space-y-4 text-center md:text-left flex-1">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-semibold text-primary">
+            {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-semibold text-primary">
               <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
               Available for opportunities
-            </div>
+            </div> */}
             
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-foreground leading-none">
+            <h1 className="text-5xl md:text-7xl font-black tracking-tight text-white leading-none">
               {about.name}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
@@ -138,9 +138,9 @@ export default function AboutPage() {
           <Card className="md:col-span-2 bg-card/60 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 shadow-soft hover:shadow-medium group">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="p-2.5 rounded-xl bg-primary/15 border border-primary/20 group-hover:bg-primary/25 transition-all">
-                  <Code2 className="w-5 h-5 text-primary" />
-                </div>
+                {/* <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-primary/10 border border-primary/20 text-primary group-hover:bg-primary/25 group-hover:border-primary/30 transition-all duration-300">
+                  <Code2 className="w-5 h-5" />
+                </div> */}
                 <CardTitle className="text-2xl text-foreground font-bold tracking-tight">About Me</CardTitle>
               </div>
             </CardHeader>
@@ -157,16 +157,16 @@ export default function AboutPage() {
           <Card className="bg-card/60 backdrop-blur-sm border-border hover:border-accent/50 transition-all duration-300 shadow-soft hover:shadow-medium group">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="p-2.5 rounded-xl bg-accent/15 border border-accent/20 group-hover:bg-accent/25 transition-all">
-                  <Mail className="w-5 h-5 text-accent" />
-                </div>
+                {/* <div className="w-11 h-11 flex items-center justify-center rounded-xl bg-accent/10 border border-accent/90 text-accent group-hover:bg-accent/25 group-hover:border-accent/80 transition-all duration-300">
+                  <Mail className="w-5 h-5 " />
+                </div> */}
                 <CardTitle className="text-2xl text-foreground font-bold tracking-tight">Connect</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center gap-3.5 group cursor-pointer p-2.5 rounded-xl hover:bg-muted/40 transition-colors border border-transparent hover:border-border/35">
-                <div className="p-2.5 rounded-xl bg-primary/10 border border-primary/20">
-                  <MapPin className="w-4 h-4 text-primary" />
+                <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 border border-primary/20 text-primary group-hover:bg-primary/20 group-hover:border-primary/30 transition-all duration-300">
+                  <MapPin className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Location</p>
@@ -175,8 +175,8 @@ export default function AboutPage() {
               </div>
 
               <div className="flex items-center gap-3.5 group cursor-pointer p-2.5 rounded-xl hover:bg-muted/40 transition-colors border border-transparent hover:border-border/35">
-                <div className="p-2.5 rounded-xl bg-accent/10 border border-accent/20">
-                  <Mail className="w-4 h-4 text-accent" />
+                <div className="w-10 h-10 flex items-center justify-center rounded-xl  bg-primary/10 border border-primary/20 text-primary group-hover:bg-primary/20 group-hover:border-primary/30 transition-all duration-300">
+                  <Mail className="w-5 h-5" />
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Email</p>
@@ -207,9 +207,9 @@ export default function AboutPage() {
                 <Card key={domain} className={`bg-card border-border shadow-soft hover:shadow-medium ${config.borderColor} transition-all duration-300 group`}>
                   <CardHeader>
                     <div className="flex items-center gap-3">
-                      <div className={`p-2.5 rounded-lg bg-gradient-to-br ${config.gradient} group-hover:scale-110 transition-transform`}>
-                        <Icon className={`w-6 h-6 ${config.iconColor}`} />
-                      </div>
+                      {/* <div className={`w-11 h-11 flex items-center justify-center rounded-xl bg-gradient-to-br ${config.gradient} border border-border/20 group-hover:scale-105 transition-transform duration-300`}>
+                        <Icon className={`w-5 h-5 ${config.iconColor}`} />
+                      </div> */}
                       <CardTitle className="text-xl text-card-foreground">{config.label}</CardTitle>
                     </div>
                   </CardHeader>

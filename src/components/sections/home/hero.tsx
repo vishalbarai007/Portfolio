@@ -122,7 +122,7 @@ export default function Hero() {
                   key={domain.label}
                   className="flex items-center gap-3 p-3 rounded-lg border border-border bg-card/45 hover:bg-card transition-all duration-300 group cursor-default"
                 >
-                  <div className={`p-2 rounded-md ${domain.bg} ${domain.color} group-hover:scale-105 transition-transform`}>
+                  <div className={`w-10 h-10 shrink-0 flex items-center justify-center rounded-xl ${domain.bg} ${domain.color} border border-border/10 group-hover:scale-105 transition-transform duration-300`}>
                     <domain.icon className="w-5 h-5" />
                   </div>
                   <div>

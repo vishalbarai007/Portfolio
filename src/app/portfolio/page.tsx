@@ -13,10 +13,10 @@ const portfolioCategories = [
     title: "Full Stack Web Development",
     description: "Responsive, scalable web applications built with modern frameworks",
     icon: Code2,
-    gradient: "from-primary/20 to-accent/20",
-    iconColor: "text-primary",
-    borderColor: "hover:border-primary/50",
-    bgHover: "group-hover:bg-primary/5",
+    gradient: "from-blue-500/20 to-cyan-500/20",
+    iconColor: "text-blue-400",
+    borderColor: "hover:border-blue-500/50",
+    bgHover: "group-hover:bg-blue-500/5",
     href: "/portfolio/web",
     stats: { projects: 12, technologies: 8 },
     highlight: "React • Next.js • TypeScript",
@@ -26,10 +26,10 @@ const portfolioCategories = [
     title: "App Development",
     description: "Native and cross-platform mobile applications",
     icon: Smartphone,
-    gradient: "from-accent/20 to-primary/20",
-    iconColor: "text-accent",
-    borderColor: "hover:border-accent/50",
-    bgHover: "group-hover:bg-accent/5",
+    gradient: "from-green-500/20 to-emerald-500/20",
+    iconColor: "text-green-400",
+    borderColor: "hover:border-green-500/50",
+    bgHover: "group-hover:bg-green-500/5",
     href: "/portfolio/app",
     stats: { projects: 8, technologies: 5 },
     highlight: "React Native • Flutter • Swift",
@@ -39,10 +39,10 @@ const portfolioCategories = [
     title: "Software Engineering",
     description: "Distributed systems and backend infrastructure",
     icon: Cpu,
-    gradient: "from-secondary/20 to-primary/20",
-    iconColor: "text-secondary",
-    borderColor: "hover:border-secondary/50",
-    bgHover: "group-hover:bg-secondary/5",
+    gradient: "from-purple-500/20 to-pink-500/20",
+    iconColor: "text-purple-400",
+    borderColor: "hover:border-purple-500/50",
+    bgHover: "group-hover:bg-purple-500/5",
     href: "/portfolio/software",
     stats: { projects: 6, technologies: 7 },
     highlight: "Go • Rust • Kubernetes",
@@ -52,10 +52,10 @@ const portfolioCategories = [
     title: "Cybersecurity",
     description: "Security audits, penetration testing, and secure systems",
     icon: Shield,
-    gradient: "from-accent/30 to-destructive/20",
-    iconColor: "text-accent",
-    borderColor: "hover:border-accent/50",
-    bgHover: "group-hover:bg-accent/5",
+    gradient: "from-red-500/20 to-rose-500/20",
+    iconColor: "text-red-400",
+    borderColor: "hover:border-red-500/50",
+    bgHover: "group-hover:bg-red-500/5",
     href: "/portfolio/cybersecurity",
     stats: { projects: 5, technologies: 6 },
     highlight: "Penetration Testing • OSCP",
@@ -76,10 +76,10 @@ export default function PortfolioPage() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Hero Section */}
         <div className="text-center mb-16 space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">Explore My Work</span>
-          </div>
+          </div> */}
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
             Portfolio
@@ -89,7 +89,7 @@ export default function PortfolioPage() {
           </p>
 
           {/* Stats Overview */}
-          <div className="flex flex-wrap items-center justify-center gap-8 pt-8">
+          {/* <div className="flex flex-wrap items-center justify-center gap-8 pt-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-1">31</div>
               <div className="text-sm text-muted-foreground">Total Projects</div>
@@ -104,7 +104,7 @@ export default function PortfolioPage() {
               <div className="text-4xl font-bold text-secondary mb-1">4</div>
               <div className="text-sm text-muted-foreground">Domains</div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Portfolio Categories Grid */}
@@ -127,8 +127,8 @@ export default function PortfolioPage() {
                   
                   <CardHeader className="relative z-10">
                     <div className="flex items-start justify-between mb-4">
-                      <div className={`p-3 rounded-xl bg-gradient-to-br ${category.gradient} group-hover:scale-110 transition-transform duration-300`}>
-                        <Icon className={`${category.iconColor} w-8 h-8`} />
+                      <div className={`w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-br ${category.gradient} border border-border/20 group-hover:scale-105 transition-transform duration-300`}>
+                        <Icon className={`${category.iconColor} w-6 h-6`} />
                       </div>
                       <Badge 
                         variant="secondary" 
@@ -167,8 +167,7 @@ export default function PortfolioPage() {
                       >
                         Explore
                         <ArrowRight 
-                          size={16} 
-                          className={`${isHovered ? 'translate-x-1' : ''} transition-transform duration-300`}
+                          className={`w-4 h-4 transition-transform duration-300 ${isHovered ? 'translate-x-1' : ''}`}
                         />
                       </Button>
                     </div>
@@ -192,6 +191,7 @@ export default function PortfolioPage() {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-medium transition-all"
+                onClick={() => window.open('https://vishalbaraiofficial02@gmail.com', '_blank')}
               >
                 Get in Touch
                 <ArrowRight className="ml-2 w-4 h-4" />

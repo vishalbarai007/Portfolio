@@ -117,9 +117,9 @@ export default function FeaturedProjects() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 rounded-full border border-border bg-muted/30 backdrop-blur-sm">
+          {/* <div className="inline-flex items-center justify-center px-4 py-1.5 mb-6 rounded-full border border-border bg-muted/30 backdrop-blur-sm">
             <span className="text-sm font-medium text-muted-foreground">Portfolio</span>
-          </div>
+          </div> */}
           <h2 ref={titleRef} className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
             Featured Projects
           </h2>
@@ -152,7 +152,7 @@ export default function FeaturedProjects() {
                       className="p-2 rounded-full hover:bg-muted transition-colors"
                       aria-label="View source code"
                     >
-                      <Github size={18} className="text-muted-foreground hover:text-foreground transition-colors" />
+                      <Github className="w-4.5 h-4.5 text-muted-foreground hover:text-foreground transition-colors" />
                     </a>
                     <a
                       href={project.live}
@@ -161,7 +161,7 @@ export default function FeaturedProjects() {
                       className="p-2 rounded-full hover:bg-muted transition-colors"
                       aria-label="View live project"
                     >
-                      <ExternalLink size={18} className="text-muted-foreground hover:text-foreground transition-colors" />
+                      <ExternalLink className="w-4.5 h-4.5 text-muted-foreground hover:text-foreground transition-colors" />
                     </a>
                   </div>
                 </div>
@@ -195,7 +195,7 @@ export default function FeaturedProjects() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors group/link"
                   >
-                    <Github size={16} className="group-hover/link:scale-110 transition-transform" />
+                    <Github className="w-4 h-4 group-hover/link:scale-110 transition-transform" />
                     <span>Source Code</span>
                   </a>
                   <a
@@ -204,7 +204,7 @@ export default function FeaturedProjects() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors group/link"
                   >
-                    <ExternalLink size={16} className="group-hover/link:scale-110 transition-transform" />
+                    <ExternalLink className="w-4 h-4 group-hover/link:scale-110 transition-transform" />
                     <span>Live Demo</span>
                   </a>
                 </div>

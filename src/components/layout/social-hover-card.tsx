@@ -22,21 +22,21 @@ export function SocialHoverCard({ platform, href, children }: SocialHoverCardPro
       case "github":
         return {
           handle: "github.com/vishalbarai007",
-          stats: "1.2k+ followers • 50+ repositories",
+          stats: "50+ followers • 35+ repositories",
           bio: "Full Stack Developer & Security Enthusiast crafting scalable systems.",
         }
       case "linkedin":
         return {
           handle: "linkedin.com/in/vishalbarai",
-          stats: "500+ connections • 6+ years experience",
+          stats: "500+ connections • 3+ years experience",
           bio: "Architecting microservices & cross-platform applications.",
         }
-      case "twitter":
-        return {
-          handle: "twitter.com/vishalbarai",
-          stats: "200+ followers • 150+ posts",
-          bio: "Sharing insights on cybersecurity, full-stack tech, and dev tools.",
-        }
+      // case "twitter":
+      //   return {
+      //     handle: "twitter.com/vishalbarai",
+      //     stats: "200+ followers • 150+ posts",
+      //     bio: "Sharing insights on cybersecurity, full-stack tech, and dev tools.",
+      //   }
       case "email":
       case "mail":
         return {
@@ -61,7 +61,7 @@ export function SocialHoverCard({ platform, href, children }: SocialHoverCardPro
     { label: "Twitter", href: "https://twitter.com", icon: Twitter },
     { label: "LinkedIn", href: "https://linkedin.com/in/vishalbarai", icon: Linkedin },
     { label: "Telegram", href: "https://t.me/vishalbarai", icon: Send },
-    { label: "Resume", href: "/resume", icon: FileText },
+    // { label: "Resume", href: "/resume", icon: FileText },
   ]
 
   return (
@@ -80,7 +80,7 @@ export function SocialHoverCard({ platform, href, children }: SocialHoverCardPro
         {/* Banner */}
         <div className="relative h-24 w-full bg-neutral-900 border-b border-border/40 overflow-hidden">
           <Image
-            src="/Images/mypersonal/banner.jpg"
+            src="/Images/Milestones/Banner.png"
             alt="Vishal Barai Banner"
             fill
             sizes="340px"
@@ -94,7 +94,7 @@ export function SocialHoverCard({ platform, href, children }: SocialHoverCardPro
         <div className="relative px-4 pb-3">
           <div className="absolute -top-8 left-4 w-18 h-18 rounded-full border-2 border-border overflow-hidden bg-background shadow-lg">
             <Image
-              src="/Images/mypersonal/avatar.png"
+              src="/Images/Milestones/profile2.png"
               alt="Vishal Barai"
               fill
               sizes="72px"
@@ -105,7 +105,7 @@ export function SocialHoverCard({ platform, href, children }: SocialHoverCardPro
           {/* User Details */}
           <div className="pt-11 text-left space-y-2">
             <div>
-              <h4 className="text-lg font-bold tracking-tight text-foreground flex items-center gap-1.5">
+              <h4 className="text-lg font-bold tracking-tight text-white flex items-center gap-1.5">
                 Vishal Barai
                 <span className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full border border-primary/20 font-semibold uppercase">
                   PRO
@@ -122,7 +122,7 @@ export function SocialHoverCard({ platform, href, children }: SocialHoverCardPro
 
             {/* Location & Metadata */}
             <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              <MapPin className="h-3.5 w-3.5 shrink-0 text-muted-foreground" />
+              <MapPin className="w-3.5 h-3.5 shrink-0 text-muted-foreground" />
               <span>Mumbai, Maharashtra, India</span>
             </div>
 
@@ -151,7 +151,7 @@ export function SocialHoverCard({ platform, href, children }: SocialHoverCardPro
                     : "border-border bg-card text-muted-foreground hover:text-foreground hover:bg-muted hover:scale-105"
                 )}
               >
-                <link.icon className="h-3 w-3 shrink-0" />
+                <link.icon className="w-3.5 h-3.5 shrink-0" />
                 <span>{link.label}</span>
               </a>
             )

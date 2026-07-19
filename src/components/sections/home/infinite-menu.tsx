@@ -1156,8 +1156,8 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [], onItemClick }) => {
           >
             {activeItem.description}
             <br></br>
-            <Link href={activeItem.redirect}>
-            <button>view more</button></Link>
+            {/* <Link href={activeItem.redirect}> */}
+            {/* <button>view more</button></Link> */}
           
 
           </p>
