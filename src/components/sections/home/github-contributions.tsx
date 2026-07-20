@@ -93,7 +93,7 @@ export default function GitHubContributions({ isDark = true }: { isDark?: boolea
                     <div className="mb-6">
                         <p className={`text-sm font-semibold uppercase tracking-wider transition-colors duration-300 ${isDark ? 'text-gray-400' : 'text-gray-600'
                             }`}>
-                            @vishalbarai007 · 2025
+                            @vishalbarai007 · Last 365 Days
                         </p>
                     </div>
 
@@ -162,17 +162,17 @@ export default function GitHubContributions({ isDark = true }: { isDark?: boolea
                                 ],
                             }}
                             labels={{
-                                totalCount: `{{count}} contributions in 2025`,
+                                totalCount: `{{count}} contributions last 365 days`,
                             }}
                             showWeekdayLabels
                         />
                     </div>
 
                     {/* Footer Info */}
-                    <div className={`mt-4 text-xs text-center transition-colors duration-300 ${isDark ? 'text-gray-500' : 'text-gray-500'
+                    {/* <div className={`mt-4 text-xs text-center transition-colors duration-300 ${isDark ? 'text-gray-500' : 'text-gray-500'
                         }`}>
                         Hover over squares to see contribution details
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
