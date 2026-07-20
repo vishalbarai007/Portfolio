@@ -12,7 +12,7 @@ export default function GitHubContributions({ isDark = true }: { isDark?: boolea
         async function fetchContributions() {
             try {
                 const res = await fetch(
-                    "https://github-contributions-api.jogruber.de/v4/vishalbarai007?y=2025"
+                    "https://github-contributions-api.jogruber.de/v4/vishalbarai007?y=last"
                 );
 
                 const json = await res.json();

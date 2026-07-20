@@ -1121,16 +1121,17 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [], onItemClick }) => {
           select-none
           absolute
           font-black
-          text-2xl md:text-[4rem]
-          text-center md:text-left
-          w-[90%] md:w-auto
-          top-8 md:top-1/2
-          left-1/2 md:left-[1.6em]
+          [font-size:4rem]
+          left-[1.6em]
+          top-1/2
+          transform
+          -translate-x-[10%]
+          -translate-y-1/2
           transition-all
           ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
           ${isMoving
-                ? 'opacity-0 pointer-events-none duration-[100ms] -translate-y-4 md:-translate-y-1/2 -translate-x-1/2 md:translate-x-[10%]'
-                : 'opacity-100 pointer-events-auto duration-[500ms] translate-y-0 md:-translate-y-1/2 -translate-x-1/2 md:translate-x-[20%]'
+                ? 'opacity-0 pointer-events-none duration-[100ms]'
+                : 'opacity-100 pointer-events-auto duration-[500ms]'
               }
         `}
           >
@@ -1141,21 +1142,24 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [], onItemClick }) => {
             className={`
           select-none
           absolute
-          w-[90%] md:w-auto
-          max-w-[45ch]
-          text-sm md:text-[1.5rem]
-          text-center md:text-left
-          bottom-28 md:bottom-auto md:top-1/2
-          left-1/2 md:left-auto md:right-[1%]
+          max-w-[20ch]
+          text-[1.5rem]
+          top-1/2
+          right-[1%]
           transition-all
           ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
           ${isMoving
-                ? 'opacity-0 pointer-events-none duration-100 translate-y-4 md:-translate-y-1/2 -translate-x-1/2 md:translate-x-[-60%]'
-                : 'opacity-100 pointer-events-auto duration-500 translate-y-0 md:-translate-y-1/2 -translate-x-1/2 md:translate-x-[-90%]'
+                ? 'opacity-0 pointer-events-none duration-100 translate-x-[-60%] -translate-y-1/2'
+                : 'opacity-100 pointer-events-auto duration-500 translate-x-[-90%] -translate-y-1/2'
               }
         `}
           >
             {activeItem.description}
+            <br></br>
+            {/* <Link href={activeItem.redirect}> */}
+            {/* <button>view more</button></Link> */}
+
+
           </p>
 
           <div

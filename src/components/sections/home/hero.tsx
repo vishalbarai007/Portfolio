@@ -50,7 +50,7 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Column: Text & CTA */}
           <motion.div
             variants={containerVariants}
@@ -159,7 +159,7 @@ export default function Hero() {
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.4 }}
-                className="absolute bottom-2 right-2 md:-bottom-6 md:-right-6 z-20 bg-card/95 backdrop-blur-md border border-border p-4 rounded-xl shadow-2xl w-[220px]"
+                className="absolute -bottom-6 -right-6 z-20 bg-card/95 backdrop-blur-md border border-border p-4 rounded-xl shadow-2xl w-[220px]"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center">
