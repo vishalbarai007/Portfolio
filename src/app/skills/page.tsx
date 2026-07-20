@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import ScrollReveal from "@/components/sections/scroll-reveal"
-import SkillMatrixEnhanced from "@/components/sections/skill-matrix-enhanced"
+import ScrollReveal from "@/components/layout/scroll-reveal"
+import SkillMatrixEnhanced from "@/components/sections/skills/skill-matrix-enhanced"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   BarChart,
@@ -79,9 +79,11 @@ export default function SkillsPage() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <ScrollReveal className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Skills & Expertise</h1>
-          <p className="text-lg text-muted max-w-2xl mx-auto">
-            Comprehensive overview of my technical skills, proficiency levels, and expertise across multiple domains
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
+            Skills & Expertise
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+            Comprehensive overview of my technical skills, proficiency levels, and expertise across multiple domains.
           </p>
         </ScrollReveal>
 

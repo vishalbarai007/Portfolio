@@ -1,42 +1,77 @@
 [
   {
     "id": 1,
-    "title": "Senior Full Stack Developer",
-    "company": "Tech Company",
-    "domain": "web",
-    "startDate": "2022-01-01",
+    "title": "Vice President",
+    "company": "RGIT FE-Sahyog",
+    "domain": "software",
+    "employmentType": "Full-time",
+    "startDate": "2025-07-01",
     "endDate": null,
-    "description": "Leading development of scalable web applications",
-    "highlights": ["Built microservices architecture", "Mentored junior developers"]
+    "periodText": "Jul 2025 - Present · 1 yr 1 mo",
+    "location": "Mumbai, Maharashtra, India · On-site",
+    "description": "Founding Vice President of FE Sahyog. Started with motive to make First year Easier for Engineering Students in RGIT, To deliver Quality of resources, mentorship, and support.",
+    "highlights": [
+      "Founding Vice President of FE Sahyog.",
+      "Started with motive to make First year Easier for Engineering Students in RGIT.",
+      "Delivered quality resources, mentorship, and support."
+    ],
+    "skills": ["Event Management", "Crowd Control", "Leadership", "Public Speaking"],
+    "logo": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=100"
   },
   {
     "id": 2,
-    "title": "Mobile App Developer",
-    "company": "StartUp Inc",
-    "domain": "app",
-    "startDate": "2020-06-01",
-    "endDate": "2021-12-31",
-    "description": "Developed cross-platform mobile applications",
-    "highlights": ["Shipped 3 production apps", "Improved performance by 40%"]
+    "title": "Web Secretary",
+    "company": "RGIT CESS - Computer Engineering Students Society",
+    "domain": "web",
+    "employmentType": "Self-employed",
+    "startDate": "2025-06-01",
+    "endDate": null,
+    "periodText": "Jun 2025 - Present · 1 yr 2 mos",
+    "location": "Mumbai, Maharashtra, India · On-site",
+    "description": "Leading web development projects and driving CESS initiatives.",
+    "highlights": [
+      "Led web development projects and drove CESS initiatives.",
+      "Promoted collaborative web standards and team leadership."
+    ],
+    "skills": ["Web Development", "Team Leadership"],
+    "logo": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=100",
+    "groupPeriodText": "Self-employed · 1 yr 10 mos"
   },
   {
     "id": 3,
-    "title": "Software Engineer",
-    "company": "Enterprise Corp",
-    "domain": "software",
-    "startDate": "2019-01-01",
-    "endDate": "2020-05-31",
-    "description": "Designed distributed systems",
-    "highlights": ["Architected microservices", "Reduced latency by 60%"]
+    "title": "Head of Web Development",
+    "company": "RGIT CESS - Computer Engineering Students Society",
+    "domain": "web",
+    "employmentType": "Self-employed",
+    "startDate": "2024-10-01",
+    "endDate": "2025-06-30",
+    "periodText": "Oct 2024 - Jun 2025 · 9 mos",
+    "location": "Mumbai, Maharashtra, India · On-site",
+    "description": "Managed the frontend development of CESS web properties and mentored web team members.",
+    "highlights": [
+      "Managed the frontend development of CESS web properties.",
+      "Mentored web team members on modern web standards."
+    ],
+    "skills": ["Web Development", "Frontend Development", "Project Management"],
+    "logo": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=100",
+    "groupPeriodText": "Self-employed · 1 yr 10 mos"
   },
   {
     "id": 4,
-    "title": "Security Researcher",
-    "company": "Security Firm",
-    "domain": "security",
-    "startDate": "2018-01-01",
-    "endDate": "2018-12-31",
-    "description": "Conducted security audits and penetration testing",
-    "highlights": ["Found 50+ vulnerabilities", "Improved security posture"]
+    "title": "Technical Head",
+    "company": "RGIT STUDENT COUNCIL",
+    "domain": "web",
+    "employmentType": "Self-employed",
+    "startDate": "2025-02-01",
+    "endDate": "2025-06-30",
+    "periodText": "Feb 2025 - Jun 2025 · 5 mos",
+    "location": "Mumbai, Maharashtra, India · On-site",
+    "description": "Managed technical operations, website developments, and coordinate IT support for college festivals and student events.",
+    "highlights": [
+      "Managed technical operations and website developments.",
+      "Coordinated IT support for college festivals and student events."
+    ],
+    "skills": ["IT Support", "Technical Operations", "Website Development"],
+    "logo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=100"
   }
 ]

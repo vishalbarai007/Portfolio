@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import ScrollReveal from "@/components/sections/scroll-reveal"
+import ScrollReveal from "@/components/layout/scroll-reveal"
 import { Download, Loader2 } from "lucide-react"
 import about from "@/data/about.json"
 import skills from "@/data/skills.json"
@@ -48,9 +48,11 @@ export default function ResumePage() {
     <div className="min-h-screen bg-background py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Resume</h1>
-          <p className="text-lg text-muted max-w-2xl mx-auto">
-            Generate domain-specific resumes tailored to your professional focus
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
+            Resume
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+            Generate domain-specific resumes tailored to your professional focus.
           </p>
         </ScrollReveal>
 
@@ -84,7 +86,7 @@ export default function ResumePage() {
               {/* Summary */}
               <div>
                 <h3 className="text-lg font-semibold mb-3">Professional Summary</h3>
-                <p className="text-muted">{about.summary}</p>
+                <p className="text-muted-foreground">{about.summary}</p>
               </div>
 
               {/* Skills */}
@@ -111,10 +113,10 @@ export default function ResumePage() {
                 <h3 className="text-lg font-semibold mb-3">Contact Information</h3>
                 <div className="space-y-2 text-sm">
                   <p>
-                    <span className="text-muted">Email:</span> {about.email}
+                    <span className="text-muted-foreground">Email:</span> {about.email}
                   </p>
                   <p>
-                    <span className="text-muted">Location:</span> {about.location}
+                    <span className="text-muted-foreground">Location:</span> {about.location}
                   </p>
                 </div>
               </div>

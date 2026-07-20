@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import ScrollReveal from "@/components/sections/scroll-reveal"
+import ScrollReveal from "@/components/layout/scroll-reveal"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Mail, Loader2 } from "lucide-react"
@@ -45,8 +45,12 @@ export default function ContactPage() {
     <div className="min-h-screen bg-background py-20 px-4">
       <div className="max-w-2xl mx-auto">
         <ScrollReveal className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Get in Touch</h1>
-          <p className="text-lg text-muted">Have a project in mind? Let's discuss how I can help</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
+            Get in Touch
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
+            Have a project in mind? Let's discuss how I can help.
+          </p>
         </ScrollReveal>
 
         <ScrollReveal>

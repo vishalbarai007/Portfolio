@@ -1,0 +1,235 @@
+{
+  "React": [
+    {
+      "name": "nextjs-ecommerce",
+      "description": "Full-stack e-commerce platform built with Next.js, React, and Stripe.",
+      "repoUrl": "https://github.com/vishalbarai007/nextjs-ecommerce",
+      "liveUrl": "https://nextjs-ecommerce-demo.vercel.app"
+    },
+    {
+      "name": "portfolio-v2",
+      "description": "Personal developer portfolio with interactive Framer Motion animations and WebGL sliders.",
+      "repoUrl": "https://github.com/vishalbarai007/portfolio",
+      "liveUrl": "https://vishalbarai.dev"
+    }
+  ],
+  "Next.js": [
+    {
+      "name": "nextjs-ecommerce",
+      "description": "Full-stack e-commerce platform built with Next.js, React, and Stripe.",
+      "repoUrl": "https://github.com/vishalbarai007/nextjs-ecommerce",
+      "liveUrl": "https://nextjs-ecommerce-demo.vercel.app"
+    },
+    {
+      "name": "dev-dashboard",
+      "description": "A developer analytics dashboard tracking active contributions and API performance.",
+      "repoUrl": "https://github.com/vishalbarai007/dev-dashboard",
+      "liveUrl": "https://dev-dashboard-demo.vercel.app"
+    }
+  ],
+  "TypeScript": [
+    {
+      "name": "nextjs-ecommerce",
+      "description": "Full-stack e-commerce platform built with Next.js, React, and Stripe.",
+      "repoUrl": "https://github.com/vishalbarai007/nextjs-ecommerce",
+      "liveUrl": "https://nextjs-ecommerce-demo.vercel.app"
+    },
+    {
+      "name": "ts-design-patterns",
+      "description": "Object-oriented software design patterns implemented cleanly in TypeScript.",
+      "repoUrl": "https://github.com/vishalbarai007/ts-design-patterns"
+    }
+  ],
+  "Tailwind CSS": [
+    {
+      "name": "nextjs-ecommerce",
+      "description": "Full-stack e-commerce platform built with Next.js, React, and Stripe.",
+      "repoUrl": "https://github.com/vishalbarai007/nextjs-ecommerce",
+      "liveUrl": "https://nextjs-ecommerce-demo.vercel.app"
+    },
+    {
+      "name": "glassmorphism-ui",
+      "description": "A premium component library built with Tailwind CSS glassmorphism and variables.",
+      "repoUrl": "https://github.com/vishalbarai007/glassmorphism-ui"
+    }
+  ],
+  "Node.js": [
+    {
+      "name": "express-auth-microservice",
+      "description": "Secure OAuth2 / JWT authentication service for distributed platforms.",
+      "repoUrl": "https://github.com/vishalbarai007/express-auth-service"
+    },
+    {
+      "name": "realtime-chat-backend",
+      "description": "WebSockets server using Socket.io, Node.js, and Redis adapter.",
+      "repoUrl": "https://github.com/vishalbarai007/realtime-chat"
+    }
+  ],
+  "Express": [
+    {
+      "name": "express-auth-microservice",
+      "description": "Secure OAuth2 / JWT authentication service for distributed platforms.",
+      "repoUrl": "https://github.com/vishalbarai007/express-auth-service"
+    }
+  ],
+  "PostgreSQL": [
+    {
+      "name": "nextjs-ecommerce",
+      "description": "Full-stack e-commerce platform built with Next.js, React, and Stripe.",
+      "repoUrl": "https://github.com/vishalbarai007/nextjs-ecommerce",
+      "liveUrl": "https://nextjs-ecommerce-demo.vercel.app"
+    }
+  ],
+  "MongoDB": [
+    {
+      "name": "realtime-chat-backend",
+      "description": "WebSockets server using Socket.io, Node.js, and Redis adapter.",
+      "repoUrl": "https://github.com/vishalbarai007/realtime-chat"
+    }
+  ],
+  "GraphQL": [
+    {
+      "name": "graphql-books-api",
+      "description": "A federated GraphQL API gateway for distributed data microservices.",
+      "repoUrl": "https://github.com/vishalbarai007/graphql-api"
+    }
+  ],
+  "Git": [
+    {
+      "name": "git-workflow-builder",
+      "description": "CLI tool to generate customized and automated git hooks/branching policies.",
+      "repoUrl": "https://github.com/vishalbarai007/git-workflow"
+    }
+  ],
+  "Docker": [
+    {
+      "name": "distributed-cache",
+      "description": "High-performance distributed caching system written in Go.",
+      "repoUrl": "https://github.com/vishalbarai007/distributed-cache"
+    },
+    {
+      "name": "express-auth-microservice",
+      "description": "Secure OAuth2 / JWT authentication service for distributed platforms.",
+      "repoUrl": "https://github.com/vishalbarai007/express-auth-service"
+    }
+  ],
+  "AWS": [
+    {
+      "name": "aws-infra-terraform",
+      "description": "Infrastructure as Code configuration for multi-region VPC deployment on AWS.",
+      "repoUrl": "https://github.com/vishalbarai007/aws-infra"
+    }
+  ],
+  "React Native": [
+    {
+      "name": "react-native-fitness",
+      "description": "Cross-platform mobile fitness app tracking calories, heart-rate, and workouts.",
+      "repoUrl": "https://github.com/vishalbarai007/react-native-fitness",
+      "liveUrl": "https://expo.dev/@vishalbarai/fitness-app"
+    }
+  ],
+  "Flutter": [
+    {
+      "name": "flutter-budget-tracker",
+      "description": "Budget tracking application with interactive charts and offline sync support.",
+      "repoUrl": "https://github.com/vishalbarai007/flutter-budget"
+    }
+  ],
+  "Swift": [
+    {
+      "name": "swift-notes-app",
+      "description": "Native iOS note taking app using SwiftData for persistent offline caching.",
+      "repoUrl": "https://github.com/vishalbarai007/swift-notes"
+    }
+  ],
+  "Kotlin": [
+    {
+      "name": "android-task-manager",
+      "description": "Native Android app built using Jetpack Compose and Kotlin.",
+      "repoUrl": "https://github.com/vishalbarai007/android-task"
+    }
+  ],
+  "Firebase": [
+    {
+      "name": "react-native-fitness",
+      "description": "Cross-platform mobile fitness app tracking calories, heart-rate, and workouts.",
+      "repoUrl": "https://github.com/vishalbarai007/react-native-fitness",
+      "liveUrl": "https://expo.dev/@vishalbarai/fitness-app"
+    }
+  ],
+  "Python": [
+    {
+      "name": "security-audit-tool",
+      "description": "Automated vulnerability scanning and penetration testing framework.",
+      "repoUrl": "https://github.com/vishalbarai007/security-audit-tool"
+    }
+  ],
+  "Figma": [
+    {
+      "name": "figma-ux-design",
+      "description": "Design layouts, wireframes, and prototypes for the portfolio and web applications.",
+      "repoUrl": "https://github.com/vishalbarai007/figma-prototypes"
+    }
+  ],
+  "Go": [
+    {
+      "name": "distributed-cache",
+      "description": "High-performance distributed caching system written in Go.",
+      "repoUrl": "https://github.com/vishalbarai007/distributed-cache"
+    },
+    {
+      "name": "go-grpc-microservice",
+      "description": "Backend microservices architecture communicating via gRPC protocols.",
+      "repoUrl": "https://github.com/vishalbarai007/go-grpc"
+    }
+  ],
+  "Rust": [
+    {
+      "name": "wasm-image-processing",
+      "description": "A WebAssembly powered client-side image editor with filters written in Rust.",
+      "repoUrl": "https://github.com/vishalbarai007/wasm-image-editor"
+    }
+  ],
+  "C++": [
+    {
+      "name": "cpp-concurrency-library",
+      "description": "Custom thread-pool and concurrency utilities for CPU-intensive software tasks.",
+      "repoUrl": "https://github.com/vishalbarai007/cpp-concurrency"
+    }
+  ],
+  "Java": [
+    {
+      "name": "java-spring-cloud",
+      "description": "Enterprise microservice backend built with Spring Cloud and Eureka discovery service.",
+      "repoUrl": "https://github.com/vishalbarai007/spring-cloud"
+    }
+  ],
+  "Kubernetes": [
+    {
+      "name": "distributed-cache",
+      "description": "High-performance distributed caching system written in Go.",
+      "repoUrl": "https://github.com/vishalbarai007/distributed-cache"
+    }
+  ],
+  "Linux": [
+    {
+      "name": "homelab-configs",
+      "description": "Configuration scripts for Linux homelab environments.",
+      "repoUrl": "https://github.com/vishalbarai007/homelab"
+    }
+  ],
+  "Android Studio": [
+    {
+      "name": "android-task-manager",
+      "description": "Native Android app built using Jetpack Compose and Kotlin.",
+      "repoUrl": "https://github.com/vishalbarai007/android-task"
+    }
+  ],
+  "Xcode": [
+    {
+      "name": "swift-notes-app",
+      "description": "Native iOS note taking app using SwiftData for persistent offline caching.",
+      "repoUrl": "https://github.com/vishalbarai007/swift-notes"
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "web": {
-    "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "frontend": ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     "backend": ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"],
     "tools": ["Git", "Docker", "Vercel", "AWS"]
   },
   "app": {
-    "mobile": ["React Native", "Flutter", "Swift", "Kotlin"],
+    "mobile": ["React Native"],
     "backend": ["Firebase", "Node.js", "Python"],
-    "tools": ["Xcode", "Android Studio", "Figma"]
+    "tools": ["Android Studio", "Figma"]
   },
   "software": {
     "languages": ["Go", "Rust", "C++", "Java"],
-    "systems": ["Kubernetes", "Docker", "gRPC", "Microservices"],
+    "systems": ["Kubernetes", "Docker"],
     "tools": ["Git", "CI/CD", "Linux"]
   },
   "security": {

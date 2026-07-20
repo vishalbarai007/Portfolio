@@ -2,8 +2,9 @@
 
 import React, { useRef, useState, useEffect } from "react"
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion"
-import { Home, Code2, Briefcase, Github, Linkedin, Twitter, Sun, Moon, Mail } from "lucide-react"
+import { Home, Code2, Briefcase, Github, Linkedin, Sun, Moon, Mail } from "lucide-react"
 import { useTheme } from "next-themes"
+import { SocialHoverCard } from "./social-hover-card"
 
 interface DockItemProps {
   mouseX: any
@@ -22,7 +23,7 @@ function DockItem({ mouseX, icon: Icon, label, onClick, href }: DockItemProps) {
     return val - bounds.x - bounds.width / 2
   })
 
-  // Distance from mouse to item center maps to size: 40px when far, 70px when right on it
+  // Distance from mouse to item center maps to size: 44px when far, 72px when close
   const widthTransform = useTransform(distance, [-150, 0, 150], [44, 72, 44])
   const heightTransform = useTransform(distance, [-150, 0, 150], [44, 72, 44])
 
@@ -30,6 +31,7 @@ function DockItem({ mouseX, icon: Icon, label, onClick, href }: DockItemProps) {
   const height = useSpring(heightTransform, { mass: 0.1, stiffness: 200, damping: 18 })
 
   const isExternal = href?.startsWith("http") || href?.startsWith("mailto")
+  const isSocial = ["github", "linkedin"].includes(label.toLowerCase())
 
   const itemContent = (
     <motion.div
@@ -40,13 +42,13 @@ function DockItem({ mouseX, icon: Icon, label, onClick, href }: DockItemProps) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <AnimatePresence>
-        {isHovered && (
+        {isHovered && !isSocial && (
           <motion.span
             initial={{ opacity: 0, y: 10, x: "-50%" }}
             animate={{ opacity: 1, y: 0, x: "-50%" }}
             exit={{ opacity: 0, y: 5, x: "-50%" }}
             transition={{ duration: 0.15 }}
-            className="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 text-xs font-medium rounded-md bg-neutral-900 text-neutral-100 dark:bg-neutral-100 dark:text-neutral-900 shadow-md whitespace-nowrap z-50 pointer-events-none"
+            className="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 text-xs font-semibold rounded-md bg-neutral-900 text-neutral-100 dark:bg-neutral-100 dark:text-neutral-900 shadow-md whitespace-nowrap z-50 pointer-events-none"
           >
             {label}
           </motion.span>
@@ -57,7 +59,7 @@ function DockItem({ mouseX, icon: Icon, label, onClick, href }: DockItemProps) {
   )
 
   if (href) {
-    return (
+    const linkElement = (
       <a
         href={href}
         target={isExternal ? "_blank" : undefined}
@@ -67,6 +69,16 @@ function DockItem({ mouseX, icon: Icon, label, onClick, href }: DockItemProps) {
         {itemContent}
       </a>
     )
+
+    if (isSocial) {
+      return (
+        <SocialHoverCard platform={label} href={href}>
+          {linkElement}
+        </SocialHoverCard>
+      )
+    }
+
+    return linkElement
   }
 
   return (
