@@ -40,7 +40,9 @@ export default function HomePageClient() {
       <DomainShowcase />
       <Techstack />
       <OtherTechstack />
-      <LandingProject />
+      <div className="hidden md:block">
+        <LandingProject />
+      </div>
       <FeaturedProjects />
       <GitHubContributions isDark={true} />
       <MacDock />
