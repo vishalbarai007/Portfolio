@@ -105,9 +105,9 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0">
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-foreground mb-4">
-        Projects & <br /> Achievements
+        Projects & <br className="hidden md:inline" /> Achievements
       </h1>
-      <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl">
+      <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-4xl">
         A curated collection of my work, showcasing a blend of creativity,
         technical expertise, and problem-solving skills across various domains.
       </p>

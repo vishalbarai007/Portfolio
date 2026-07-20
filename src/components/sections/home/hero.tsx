@@ -58,7 +58,7 @@ export default function Hero() {
             animate="visible"
             className="lg:col-span-7 flex flex-col space-y-8 text-left"
           >
-            <motion.div variants={itemVariants}>
+            {/* <motion.div variants={itemVariants}>
               <Badge
                 variant="outline"
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-border bg-muted/30 text-foreground font-semibold text-xs tracking-wider uppercase"
@@ -70,7 +70,7 @@ export default function Hero() {
                 <Sparkles className="w-3.5 h-3.5 text-primary" />
                 Available for New Projects
               </Badge>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div variants={itemVariants} className="space-y-4">
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none text-foreground">
@@ -159,7 +159,7 @@ export default function Hero() {
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.4 }}
-                className="absolute -bottom-6 -right-6 z-20 bg-card/95 backdrop-blur-md border border-border p-4 rounded-xl shadow-2xl w-[220px]"
+                className="absolute bottom-2 right-2 md:-bottom-6 md:-right-6 z-20 bg-card/95 backdrop-blur-md border border-border p-4 rounded-xl shadow-2xl w-[220px]"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center">
