@@ -32,12 +32,12 @@ const itemVariants = {
 }
 
 export default function Hero() {
-  const domains = [
-    { icon: Code2, label: "Web", desc: "React, Next.js, Node", color: "text-blue-500", bg: "bg-blue-500/10" },
-    { icon: Smartphone, label: "App", desc: "React Native, Flutter", color: "text-emerald-500", bg: "bg-emerald-500/10" },
-    { icon: Cpu, label: "Software", desc: "Python, Go, Electron", color: "text-violet-500", bg: "bg-violet-500/10" },
-    { icon: Shield, label: "Security", desc: "PenTesting, Auditing", color: "text-rose-500", bg: "bg-rose-500/10" },
-  ]
+  // const domains = [
+  //   { icon: Code2, label: "Web", desc: "React, Next.js, Node", color: "text-blue-500", bg: "bg-blue-500/10" },
+  //   { icon: Smartphone, label: "App", desc: "React Native, Flutter", color: "text-emerald-500", bg: "bg-emerald-500/10" },
+  //   { icon: Cpu, label: "Software", desc: "Python, Go, Electron", color: "text-violet-500", bg: "bg-violet-500/10" },
+  //   { icon: Shield, label: "Security", desc: "PenTesting, Auditing", color: "text-rose-500", bg: "bg-rose-500/10" },
+  // ]
 
   return (
     <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-24 pb-12 bg-background">
@@ -73,14 +73,28 @@ export default function Hero() {
             </motion.div> */}
 
             <motion.div variants={itemVariants} className="space-y-4">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none text-foreground">
-                DREAM.<br />
-                PLAN.<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground via-muted-foreground/80 to-foreground border-b-4 border-primary pb-1">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none">
+                <span className="text-white">
+                  DREAM.
+                </span>
+                <br />
+
+                <span
+                  className="italic text-transparent"
+                  style={{
+                    WebkitTextStroke: "2px #fff",
+                  }}
+                >
+                  PLAN.
+                </span>
+                <br />
+
+                <span className="text-white">
                   EXECUTE.
                 </span>
               </h1>
             </motion.div>
+            
 
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
               Passionate Full Stack Developer & Security Enthusiast crafting{" "}
@@ -113,25 +127,7 @@ export default function Hero() {
             </motion.div>
 
             {/* Quick Domain Cards with Borders */}
-            <motion.div
-              variants={itemVariants}
-              className="grid grid-cols-2 gap-4 pt-6 border-t border-border"
-            >
-              {domains.map((domain) => (
-                <div
-                  key={domain.label}
-                  className="flex items-center gap-3 p-3 rounded-lg border border-border bg-card/45 hover:bg-card transition-all duration-300 group cursor-default"
-                >
-                  <div className={`w-10 h-10 shrink-0 flex items-center justify-center rounded-xl ${domain.bg} ${domain.color} border border-border/10 group-hover:scale-105 transition-transform duration-300`}>
-                    <domain.icon className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-foreground">{domain.label}</h4>
-                    <p className="text-[11px] text-muted-foreground">{domain.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
+
           </motion.div>
 
           {/* Right Column: Visual Frame */}
@@ -144,12 +140,11 @@ export default function Hero() {
             {/* Image Container with high contrast border */}
             <div className="relative w-full max-w-[420px] aspect-square rounded-2xl border border-border bg-card p-3 shadow-2xl overflow-visible group">
               <div className="relative w-full h-full rounded-xl overflow-hidden bg-muted/20">
-                {/* Natural colored image, no heavy grayscale filter overlay, but professional shadow */}
                 <Image
                   src={LandingHero}
                   alt="Vishal Barai"
                   fill
-                  className="object-cover object-top scale-100 hover:scale-105 transition-transform duration-700"
+                  className="object-cover scale-100 hover:scale-105 transition-transform duration-700"
                   priority
                 />
               </div>
@@ -163,7 +158,7 @@ export default function Hero() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-primary/10 border border-primary/20 rounded-lg flex items-center justify-center">
-                    <span className="text-lg font-bold text-primary">6+</span>
+                    <span className="text-lg font-bold text-primary">3+</span>
                   </div>
                   <div>
                     <p className="text-xs font-black text-foreground">Years Experience</p>
