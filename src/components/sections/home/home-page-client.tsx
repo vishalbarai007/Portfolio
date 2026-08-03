@@ -7,6 +7,7 @@ import Techstack from "@/components/sections/home/webtechstack"
 import OtherTechstack from "@/components/sections/home/othertechstack"
 import LandingProject from "@/components/sections/home/landing-project"
 import dynamic from "next/dynamic"
+import Intro from "./Intro"
 
 // Dynamic imports to optimize bundle sizes and page load times
 const ClickSpark = dynamic(() => import("@/components/layout/ClickSpark"), {
@@ -36,6 +37,7 @@ export default function HomePageClient() {
       duration={500}
     >
       <Hero />
+      {/* <Intro/> */}
       <HeroParallaxDemo />
       <DomainShowcase />
       <Techstack />
