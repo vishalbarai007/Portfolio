@@ -6,6 +6,7 @@ import { Menu, X, Github, Linkedin, Mail, ArrowRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ThemeToggle } from "./theme-toggle"
 import { SocialHoverCard } from "./social-hover-card"
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -71,11 +72,17 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full top-0 z-50 h-20 flex items-center bg-background/80 backdrop-blur-md border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center relative z-50">
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="text-2xl font-bold text-primary hover:scale-110 transition-transform"
           onClick={() => setIsOpen(false)}
         >
+          {/* <Image
+            src="/Images/mypersonal/sign.png"
+            alt="Profile"
+            width={100}
+            height={100}
+          /> */}
           V
         </Link>
 
@@ -201,14 +208,14 @@ export default function Navbar() {
 
                 <div>
                   <h3 className="text-xs uppercase tracking-widest text-muted-foreground mb-6 font-semibold">Get in Touch</h3>
-                  <a 
-                    href="mailto:vishalbaraiofficial02@gmail.com" 
+                  <a
+                    href="mailto:vishalbaraiofficial02@gmail.com"
                     className="text-xl md:text-2xl font-medium hover:text-primary underline decoration-primary/30 underline-offset-8 transition-colors"
                   >
                     Let's build something together
                   </a>
                 </div>
-                
+
                 <div className="pt-8">
                   <div className="md:hidden flex items-center gap-4 p-4 rounded-2xl bg-muted/50 w-fit">
                     <span className="text-sm font-medium">Switch Theme</span>
