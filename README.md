@@ -6,7 +6,7 @@ Welcome to the repository for my personal portfolio. This project serves as a ce
 
 This portfolio is built to highlight my expertise in modern web development, UI/UX architecture, and software engineering. It features a curated gallery of my work, ranging from physics-based web animations to cloud-deployed machine learning applications.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 The portfolio and the projects within it utilize a modern, performance-driven tech stack:
 
@@ -16,7 +16,7 @@ The portfolio and the projects within it utilize a modern, performance-driven te
 * **Machine Learning:** Scikit-learn, Python
 * **Version Control & Environment:** Git, Linux (Ubuntu)
 
-## 🚀 Featured Projects
+## Featured Projects
 
 Here is a glimpse of the key projects featured in this portfolio:
 
@@ -27,7 +27,7 @@ Here is a glimpse of the key projects featured in this portfolio:
 * **AI Script Enhancer:** A browser-based tool powered by AI to refine script clarity and tone.
 * **Web Applications:** PhotoBooth, Weather Forecast, and Plan Fit (Fitness tracking platform).
 
-## 💼 Professional Experience & Leadership
+## Professional Experience & Leadership
 
 This portfolio also details my professional milestones:
 
